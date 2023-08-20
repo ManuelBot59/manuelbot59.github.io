@@ -1,7 +1,7 @@
 
 <div id="header" align="center">
   
-  <img src="/images/fondo.jpg" width="630" height="300"/>
+  <img src="/images/fondo.jpg" width="630" height="450"/>
 </div>
 <div align="center">
 <h1>
