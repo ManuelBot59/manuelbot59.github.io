@@ -21,8 +21,80 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600,700" rel="stylesheet">
 	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+	<style>
+        /* Estilos para el modal */
+        .modal {
+            display: none; /* Ocultar el modal por defecto */
+            position: fixed; 
+            z-index: 9999; 
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto; 
+            background-color: rgb(0,0,0);
+            background-color: rgba(0,0,0,0.4); 
+        }
+        .modal-content {
+            background-color: #fefefe;
+            margin: 15% auto; 
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%; 
+            max-width: 600px;
+        }
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="image-container">
+                <a href="https://patreon.com/ManuelBot59" target="_blank">
+                    <img src="./images/CanalPatreon.jpg" alt="Imagen 1" style="width:100%; height:auto;">
+                </a>
+                <a href="https://linktr.ee/proyectosmanuelbot" target="_blank">
+                    <img src="./images/CuponesDescuento.jpg" alt="Imagen 2" style="width:100%; height:auto;">
+                </a>
+        </div>
+    </div>
+	</div>
+    <script>
+        // Obtener el modal
+        var modal = document.getElementById("myModal");
+
+        // Obtener el elemento <span> que cierra el modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // Mostrar el modal después de un cierto tiempo (por ejemplo, 3 segundos)
+        setTimeout(function() {
+            modal.style.display = "block";
+        }, 3000);
+
+        // Cuando el usuario hace clic en <span> (x), cierra el modal
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        // Cuando el usuario hace clic fuera del modal, cierra el modal
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
 	<div id="page" class="site" itemscope itemtype="http://schema.org/LocalBusiness">
 		<header class="site-header">
 			<div class="top-header">
@@ -588,8 +660,8 @@
 		</div>
 		<section class="what-other-say">
 			<div class="container">
-				<h4 class="article-subtitle">MANUEL BOT</h4>
-				<h2 class="head">Comentarios de los cursos OSINT/SOCMINT en UDEMY</h2>
+				<h4 class="article-subtitle">RESEÑAS DE NUESTROS ALUMNOS</h4>
+				<h2 class="head">Comentarios en NUESTROS CURSOS DE FORMACIÓN</h2>
 				<div class="three owl-carousel owl-theme">
 					<!-- 01 -->
 					<div class="customer-item" itemscope itemtype="http://schema.org/Rating">
