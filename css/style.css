@@ -701,6 +701,7 @@ a:hover, a:active {
 	font-family: 'Raleway', sans-serif;
 	font-weight: 600;
 	color: #3a3a3a;
+    line-height: 1.0; /* Ajusta este valor según tus necesidades */
 }
 
 .nav-desktop li {
@@ -750,7 +751,7 @@ ul > li {
 
 .menu-parent:hover > .sub-menu{
 	display: block;
-	z-index: 999;
+	z-index: 55;
 	width: 20rem;
 	padding-left: 0;
 	text-align: left;
@@ -842,14 +843,14 @@ ul > li {
 
 
 
-/*=========Popular Courses================*/
+/*=========Accede a nuestros cupones de udemy================*/
 
 .page-heading .container {
 	text-align: center;
 	/*padding-top: 6em;*/
 	/*padding-bottom: 4.687em;*/
-	padding-top: 6.25em;
-	padding-bottom: 4.375em;
+	padding-top: 4.25em;
+	padding-bottom: 1.375em;
 }
 
 .page-heading .container h2 {
@@ -895,7 +896,7 @@ ul > li {
 .gallery-section2 .button-group::after {
 	content: "";
 	position: absolute;
-	border: 0.5px solid #d4d4d4;
+	border: 0.5px solid #ffffff;
 	bottom: 0;
 	width: 530px;
 	left: 27.5%;
@@ -1158,7 +1159,7 @@ ul > li {
 /*======Why Us section==========*/
 
 .whyUs-section {
-	background: #2e3192;
+	background: #1c3961;
 	/*color: #fff;*/
 }
 
@@ -1212,7 +1213,7 @@ ul > li {
 	position: absolute;
 	content: "";
 	bottom: 0;
-	width: 9%;
+	width: 85%;
 	left: 0;
 	height: 3px;
 	/*background: #fff;*/
@@ -3542,4 +3543,16 @@ RESPONSIVE STYLESHEET
 .what-other-say .owl-carousel .owl-nav button.owl-prev:hover,
 .what-other-say .owl-nav button.owl-next:hover {
 	background: #12a84e;
+}
+
+/* Estilo para el enlace */
+.featured-points a {
+  color: #FFFFFF; 
+  text-decoration: none; /* Elimina el subrayado predeterminado */
+  transition: color 0.3s ease; /* Transición suave para el cambio de color */
+}
+
+/* Estilo para el enlace al pasar el cursor */
+.featured-points a:hover {
+  color: #12a84e; /* al pasar el cursor */
 }

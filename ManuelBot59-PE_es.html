@@ -1,0 +1,1334 @@
+<!DOCTYPE html>
+<html><head>
+	<title>OSINT. Perfil de Manuel Travezaño dedicado a la investigación a través de la Inteligencia en Fuentes Abiertas (OSINT) e Inteligencia en Redes Sociales (SOCMINT)</title>
+	<meta charset="UTF-8">
+	<meta name="languageCode" content="es"/>
+	<meta name="countryCode" content="pe"/>
+	<meta name="searchTitle" content="¿Qué es la inteligencia de código abierto (OSINT)?, ¿Qué es la Inteligencia en Redes Sociales (SOCMINT)"/>
+	<meta name="description" content="La inteligencia de código abierto (OSINT) es el proceso de recopilación y análisis de información disponible públicamente en internet. La Inteligencia en Redes Sociales (SOCMINT), es la recopilación y análisis de información pública en redes sociales para obtener insights y tomar decisiones informadas."/>
+	
+	<meta property="og:title" content="Información y Blog sobre OSINT | SOCMINT y Ciberinteligencia">
+	<meta property="og:description" content="Blog dedicado a la Inteligencia de Fuentes Abiertas (OSINT), Inteligencia en Redes Sociales (SOCMINT) y ciberinteligencia.">
+	<meta property="og:image" content="/">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<meta name="keywords" content="osint, geoint, imint, pensamiento crítico, humint, socmint, Threat intelligence, investigar en internet, investigación, inteligencia, ciberinteligencia, analista, investigar correos, manuel travezaño, manuelbot, manuelbot59, telefono osint, research, cyberint, osint perú, manuel osint, trave osint, ciber" />
+	<meta property="og:title" content="Información y Blog sobre OSINT | SOCMINT y ciberinteligencia">
+	<meta property="og:description" content="Blog dedicado a la Inteligencia de Fuentes Abiertas (OSINT), Inteligencia en Redes Sociales (SOCMINT) y ciberinteligencia.">
+	<meta property="og:image" content="/">
+	<meta name="robots" content="index, follow"/>
+	<meta name="author" content="manuel travezaño, manuelbot59, travezaño" />
+	<link rel="shortcut icon" href="css/favicon.ico" type="image/x-icon" />	
+	<link rel="stylesheet" type="text/css" href="css/all.css">
+	<link rel="stylesheet" type="text/css" href="css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="css/lightbox.css">
+	<link rel="stylesheet" type="text/css" href="css/lexslider.css">
+	<link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
+	<link rel="stylesheet" type="text/css" href="css/owl.theme.default.css">
+	<link rel="stylesheet" type="text/css" href="css/query.rateyo.css"/>
+	<link rel="stylesheet" type="text/css" href="css/query.mmenu.all.css" />
+	<link rel="stylesheet" type="text/css" href="css/meanmenu.min.css">
+	<link rel="stylesheet" type="text/css" href="css/inner-page-style.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600,700" rel="stylesheet">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:title" content="Perfil de Manuel Travezaño dedicado a la investigación a través de la Inteligencia en Fuentes Abiertas (OSINT) e Inteligencia en Redes Sociales (SOCMINT)">
+	<meta name="twitter:description" content="Blog dedicado a todo lo relacionado con la Inteligencia de Fuentes Abiertas (OSINT), Inteligencia en Redes Sociales (SOCMINT) y ciberinteligencia. Herramientas, procedimientos y más.">
+	<meta name="twitter:image" content="/">
+
+	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+	<style>
+        /* Estilos para el modal */
+        .modal {
+            display: none; /* Ocultar el modal por defecto */
+            position: fixed; 
+            z-index: 9999; 
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto; 
+            background-color: rgb(0,0,0);
+            background-color: rgba(0,0,0,0.4); 
+        }
+        .modal-content {
+            background-color: #fefefe;
+            margin: 15% auto; 
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%; 
+            max-width: 600px;
+        }
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+ 	  <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="image-container">
+                <a href="https://linktr.ee/proyectosmanuelbot" target="_blank">
+                    <img src="./images/CuponesDescuento.jpg" alt="Imagen 2" style="width:100%; height:auto;">
+                </a>
+				<a href="https://patreon.com/ManuelBot59" target="_blank">
+                    <img src="./images/CanalPatreon.jpg" alt="Imagen 1" style="width:100%; height:auto;">
+                </a>
+        </div>
+    </div>
+	</div>
+    <script>
+        // Obtener el modal
+        var modal = document.getElementById("myModal");
+
+        // Obtener el elemento <span> que cierra el modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // Mostrar el modal después de un cierto tiempo (por ejemplo, 3 segundos)
+        setTimeout(function() {
+            modal.style.display = "block";
+        }, 3000);
+
+        // Cuando el usuario hace clic en <span> (x), cierra el modal
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        // Cuando el usuario hace clic fuera del modal, cierra el modal
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+	<div id="page" class="site" itemscope itemtype="http://schema.org/LocalBusiness">
+		<header class="site-header">
+			<div class="top-header">
+				<div class="container">
+					<div class="top-header-left">
+						<div class="top-header-block">
+							<a href="#" itemprop="email"><i class="fas fa-envelope"></i>ManuelBot@proton.me</a>
+						</div>
+						<div class="top-header-block">
+							<a href="https://t.me/ManuelBot59_Bot" target="_blank" itemprop="telegram"><i class="fas fa-terminal"></i>ManuelBot59</a>
+						</div>
+					</div>
+					<div class="top-header-right">
+						<div class="social-block">
+							<ul class="social-list">
+								<li><a href="https://www.patreon.com/manuelbot59" target="_blank" title="Patreon"><i class="fab fa-patreon"></i></a></li>
+								<li><a href="https://www.youtube.com/@ManuelBot59" target="_blank" title="Youtube"><i class="fab fa-youtube"></i></a></li>
+								<li><a href="https://x.com/ManuelBot59" title="Twitter" target="_blank"><i class="fab fa-twitter"></i></a></li>
+								<li><a href="https://www.linkedin.com/in/manuelbot59/" target="_blank" title="Linkedin"><i class="fab fa-linkedin-in"></i></a></li>
+					        	<li><a href="https://www.facebook.com/ManuelBot590/" target="_blank" title="Facebook "><i class="fab fa-facebook-square"></i></a></li>
+
+						       <!--	<li><a href=""><i class="fab fa-facebook-square"></i></a></li>
+								<li><a href=""><i class="fab fa-skype"></i></a></li>
+								<li><a href=""><i class="fab fa-facebook-messenger"></i></a></li> -->
+							   <!--	<li><a href="#" title=""><i class="fa fa-trello"></i></a></li> -->
+							</ul>
+						<!--	<div align="center">
+								<form name="link">
+									<select name="menu"> 
+										<option selected>Select your link</option>
+										<option value="./ManuelBot59.html">Perú</option>
+										<option value="./ManuelBot59-ES.html">España</option>
+										<option value="./ManuelBot59-CL.html">Chile</option>
+									</select>
+								<input type="button" onClick="location=document.link.menu.options[document.link.menu.selectedIndex].value;" value="Go">
+								</form>
+							</div> -->
+						</div>
+<div class="language-selector">
+  	<button class="dropdown-toggle">
+    	<img src="images/flags/Peru.jpg" alt="Perú"> Perú   
+  	</button>
+  <!--	<ul class="dropdown-menu">
+    	<li><a href="./index_en.html"><img src="images/flags/Chile.jpg" alt="Chile"> Chile   </a></li>
+    	<li><a href="./index_pt.html"><img src="images/flags/España.jpg" alt="España"> España   </a></li>
+	</ul> -->
+	
+</div> &ensp;&ensp;
+<div class="language-selector">					
+  <button class="dropdown-toggle">
+    <img src="images/flags/España.jpg" alt="Perú"> Español
+  </button>
+  <ul class="dropdown-menu">
+    <li><a href="./index_en.html"><img src="images/flags/USA.jpg" alt="USA"> Inglés</a></li>
+    <li><a href="./index_pt.html"><img src="images/flags/Brasil.jpg" alt="BRASIL"> Portugués</a></li>
+  </ul>
+</div>
+						
+</div>									
+			</div>
+		</div>
+			
+			<!-- Top header Close -->
+			<div class="main-header">
+				<div class="container">
+					<div class="logo-wrap" itemprop="logo">
+						<img src="images/FirmaManuelBot59.png" width="230" height="60" alt="Logo Image">
+						<!-- <h1>Education</h1> -->
+					</div>
+					
+					<div class="nav-wrap">
+						<nav class="nav-desktop">
+							<ul class="menu-list">
+								<li class="menu-parent">Socmint
+									<ul class="sub-menu">
+										<li class="menu-parent">X (Twitter)
+											<ul class="sub-menu">
+												<li><a href="https://twiteridfinder.com/" target="_blank" title="">Consultar ID</a></li>
+												<li><a href="https://api.memory.lol/v1/tw/jr_majewski" target="_blank" title="">Historial de perfil</a></li>
+												<li><a href="https://www.tweetbinder.com/"  target="_blank" title="">Análisis de hashtags</a></li>
+												<li><a href="https://tweetdeck.twitter.com/"  target="_blank" title="">Tweet Deck</a></li>
+												<li><a href="https://www.tweeplers.com/map/"  target="_blank" title="">Tweet Map</a></li>
+												<li><a href="https://birdhunt.co/"  target="_blank" title="">Tweet Map 2</a></li>
+												<li><a href="https://www.activetk.jp/tools/twitter-leaked200"  target="_blank" title="">Consultar filtración</a></li>
+												<li><a href="https://waybacktweets.streamlit.app/"  target="_blank" title="">Historial de Tweets</a></li>
+												<li><a href="https://cache.digitaldigging.org/"  target="_blank" title="">Deleted Finder</a></li>
+												<li><a href="https://web.archive.org/web/20240229040734/https://github.com/The-OSINT-Newsletter/bouncer" target="_blank"  title="">Obtener ID</a></li>
+											</ul>
+										</li>
+										<li class="menu-parent">Facebook
+											<ul class="sub-menu">
+												<li><a href="https://web.archive.org/web/20240229040734/https://github.com/The-OSINT-Newsletter/bouncer" target="_blank"  title="">Obtener ID</a></li>
+												<li><a href="https://es.piliapp.com/facebook/id/" target="_blank"  title="">Obtener ID-2</a></li>
+												<li><a href="https://www.sowsearch.info/" target="_blank"  title="">Buscar actividades</a></li>	
+												<!-- <li><a href="https://lookup-id.com/#" target="_blank"  title="">ID 2 </a></li>
+												<li><a href="https://graph.tips/beta/" target="_blank"  title="">Graph Tips</a></li>
+												<li><a href="https://whopostedwhat.com/" target="_blank"  title="">Whopostedwhat</a></li>
+												<li><a href="https://addons.mozilla.org/en-US/firefox/addon/facebook-instagram-osint/" target="_blank"  title="">Extensión ID</a></li>-->
+												<li><a href="https://github.com/floriandiud/facebook-group-members-scraper" target="_blank"  title="">Raspador de datos</a></li>
+												<li><a href="https://www.google.com.pe/search?q=site%3Afacebook.com+%22text+that+says+hotmail.com" target="_blank"  title="">Operadores Dorks</a></li>
+												<li><a href="https://haveibeenzuckered.com/" target="_blank"  title="">Consultar Filtración</a></li>
+												<li><a href="https://simitator.com/" target="_blank"  title="">Generador de estados</a></li>
+											</ul>
+										</li>
+										<li class="menu-parent">Tik Tok
+											<ul class="sub-menu">
+												<li><a href="https://www.instafollowers.co/find-tiktok-user-id"  target="_blank"  title="">Consultar ID</a></li>
+												<li><a href="https://mavekite.com/"  target="_blank"  title="">Analizar cuentas</a></li>
+												<li><a href="https://manuelbot59.github.io/tiktok-DatePeru/"  target="_blank"  title="">Analizar videos</a></li>
+											<!--	<li><a href="https://manuelbot59.github.io/tiktok-DateMexico/"  target="_blank"  title="">Detalles MX</a></li>-->
+												<li><a href="https://urlebird.com/es/"  target="_blank"  title="">Visor en Línea</a></li>
+												<li><a href="https://tokcount.com/"  target="_blank"  title="">Contador de Visitas</a></li>
+												<li><a href="https://www.osintcombine.com/free-osint-tools/tiktok-quick-search"  target="_blank"  title="">Búsqueda rápida</a></li>
+												<li><a href="https://search4faces.com/en/tt00/index.html"  target="_blank"  title="">Rostro facial</a></li>
+												<li><a href="https://web.archive.org/web/20240229040734/https://github.com/The-OSINT-Newsletter/bouncer" target="_blank"  title="">Obtener ID</a></li>
+											</ul>
+										</li>
+										<li class="menu-parent">Youtube
+											<ul class="sub-menu">
+												<li><a href="https://mattw.io/youtube-metadata/bulk"  target="_blank"  title="">Obtener detalles</a></li>
+												<li><a href="http://www.watchframebyframe.com/"  target="_blank"  title="">Fotogramas</a></li>
+												<li><a href="https://citizenevidence.amnestyusa.org/"  target="_blank"  title="">Visor de datos</a></li>
+												<li><a href="https://mattw.io/youtube-geofind/" target="_blank"  title="">Buscar Geo</a></li>
+												<li><a href="https://commentviewer.com/" target="_blank"  title="">Visualizar comentarios</a></li>
+												<li><a href="https://hadzy.com/" target="_blank"  title="">Análisis de videos</a></li>
+												<li><a href="https://ytlarge.com/" target="_blank"  title="">Youtube Large</a></li>
+												<li><a href="https://filmot.com/" target="_blank"  title="">Buscar subtítulos</a></li>
+											</ul>
+										</li>											
+										<li class="menu-parent">Instagram
+											<ul class="sub-menu">
+												<!-- <li><a href="https://addons.mozilla.org/en-US/firefox/addon/facebook-instagram-osint/" target="_blank"  title="">Extensión ID</a></li>-->
+												<li><a href="https://web.archive.org/web/20240229040734/https://github.com/The-OSINT-Newsletter/bouncer" target="_blank"  title="">ID</a></li>
+												<li><a href="https://commentpicker.com/instagram-username.php"  target="_blank"  title="">Id a usuario</a></li>
+												<li><a href="https://github.com/stegers/insta-timestamp"  target="_blank"  title="">Fecha/Hora de Post</a></li>
+												<!-- <li><a href="https://saveig.app/en/instagram-private-downloader"  target="_blank"  title="">Saveig App</a></li>
+												<li><a href="https://www.picuki.com/"  target="_blank"  title="">Picuki</a></li>-->
+												<li><a href="https://chrome-stats.com/d/diobnppoomflbfopidklhnonklfpigng/download"  target="_blank"  title="">Exportar seguidores</a></li>
+												<li><a href="https://analisa.io/"  target="_blank"  title="">Obtener análisis</a></li>
+											</ul>
+										</li>														
+										<li class="menu-parent">WhatsApp
+											<ul class="sub-menu">
+												<li><a href="https://whatsapp.checkleaked.cc/"  target="_blank"  title="">Información</a></li>
+												<li><a href="https://2chat.co/es/tools/whatsapp-checker"  target="_blank"  title="">Verificador</a></li>
+												<li><a href="https://fakedetail.com/fake-whatsapp-chat-generator" target="_blank"  title="">Generador Chats</a></li>
+												<li><a href="https://www.fakewhats.com/generator" target="_blank"  title="">Generador Chats 2</a></li>
+											</ul>
+										</li>	
+										<li class="menu-parent">Telegram
+											<ul class="sub-menu">
+												<li><a href="https://telegramchannels.me/" target="_blank"  title="">Buscar canales</a></li>	
+												<li><a href="https://telegra.ph/Qu%C3%A9-saben-los-Bots-de-Telegram-sobre-nosotros-05-19" target="_blank"  title="">Artículo Bots TG</a></li>
+												<li><a href="https://telegra.ph/La-importancia-de-la-inteligencia-artificial-en-OSINT-y-SOCMINT-04-07" target="_blank"  title="">Artículo IA</a></li>
+											</ul>
+										</li>				
+										<li class="menu-parent">Utilitarios
+											<ul class="sub-menu">	
+												<li><a href="https://start.me/p/0Pqbdg/osint-500-tools" target="_blank" title="">500+ Recursos</a></li>
+												<li><a href="https://start.me/p/4K0DXg/social-media" target="_blank" title="">Redes Sociales</a></li>
+												<li><a href="https://start.me/p/ydJLqE/deepweb-en-tools" target="_blank" title="">Deep Web</a></li>	
+												<li><a href="https://start.me/p/W1AXYo/toolkit" target="_blank" title="">Recursos varios</a></li>	
+												<li><a href="https://start.me/p/QRQb0O/trouble-fake" target="_blank" title="">Recursos varios 2</a></li>						
+											</ul>
+										</li>
+									<li class="menu-parent">Simular Chats
+											<ul class="sub-menu">
+												<li><a href="https://fakeinfo.net/" target="_blank"  title="">Utilitarios Varios</a></li>
+												<li><a href="https://fakeiphonemessage.com/" target="_blank"  title="">Chat de Iphone</a></li>
+												<li><a href="https://ifaketextmessage.com/" target="_blank"  title="">Mensaje de Texto</a></li>
+												<li><a href="https://chat-simulator.com/" target="_blank"  title="">Conversación</a></li>
+											</ul>
+										</li>																
+									</ul>
+								</li>
+								<li class="menu-parent">Emails
+									<ul class="sub-menu">									
+										<li class="menu-parent">Información
+											<ul class="sub-menu">
+												<li><a href="http://comprobarcorreo.com/"  target="_blank"  title="">Verificación</a></li>
+												<li><a href="https://emailrep.io/" target="_blank"  title="">Reputación</a></li>
+												<li><a href="https://epieos.com/" target="_blank"  title="">Huella Digital</a></li>
+												<li><a href="https://avatarapi.com/" target="_blank"  title="">Obtener Foto</a></li>
+												<li><a href="https://thatsthem.com/reverse-email-lookup"  target="_blank"  title="">Búsqueda inversa</a></li>
+												<li><a href="https://viewdns.info/reversewhois/"  target="_blank"  title="">Buscar Whois</a></li>
+											</ul>
+										</li>	
+										<li class="menu-parent">Filtraciones
+											<ul class="sub-menu">
+												<li><a href="https://haveibeenpwned.com/" target="_blank"  title="">Have I Been Pwned</a></li>
+												<li><a href="https://www.digitalfootprintcheck.com/free-breach-checker.html" target="_blank"  title="">Free Breach Checker</a></li>
+												<li><a href="https://cybernews.com/personal-data-leak-check/" target="_blank"  title="">Cyber News Data</a></li>
+												<li><a href="https://leakpeek.com/" target="_blank"  title="">Contraseñas filtradas</a></li>											
+												<li><a href="https://breachdirectory.org/" target="_blank"  title="">Breach Directory</a></li>	
+												<li><a href="https://intelx.io/" target="_blank"  title="">IntelX.io</a></li>						
+											</ul>
+										</li>		
+
+										<li class="menu-parent">Temporales
+											<ul class="sub-menu">
+												<li><a href="https://correotemporal.org/" target="_blank"  title="">Correotemporal</a></li>
+												<li><a href="https://tempail.com/" target="_blank"  title="">Tempmail</a></li>
+												<li><a href="https://temp-mail.org/" target="_blank"  title="">Temp-mail</a></li>
+												<li><a href="https://www.emailnator.com/" target="_blank"  title="">Gmail 1</a></li>
+												<li><a href="https://smailpro.com/advanced" target="_blank"  title="">Gmail 2</a></li>
+											</ul>
+										</li>
+										<li class="menu-parent">OSINT
+											<ul class="sub-menu">
+												<li><a href="https://osint.rocks/"  target="_blank"  title="">General</a></li>
+												<li><a href="https://gmail-osint.activetk.jp/"  target="_blank"  title="">Ghunt en línea</a></li>
+												<li><a href="https://docs.google.com/spreadsheets/d/1vf91U__HvlNuBkY8T12CLu34AYgEbcbk/edit#gid=183866541"  target="_blank"  title="">Utilitarios</a></li>
+												<li><a href="https://www.google.com.pe/search?q=site%3Afacebook.com+%22text+that+says+hotmail.com" target="_blank"  title="">Operador Dorks</a></li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+								<li class="menu-parent">Username
+									<ul class="sub-menu">		
+										<li><a href="https://osint.rocks/"  target="_blank"  title="">General</a></li>
+										<li><a href="https://whatsmyname.app/" target="_blank"  title="">WhatsMyName</a></li>
+										<li><a href="https://www.idcrawl.com/"  target="_blank"  title="">ID Crawl</a></li>
+										<li><a href="https://docs.google.com/spreadsheets/d/1vf91U__HvlNuBkY8T12CLu34AYgEbcbk/edit#gid=183866541"  target="_blank"  title="">Utilitarios</a></li>										
+										<li><a href="https://www.social-searcher.com/"  target="_blank"  title="">Motor de búsqueda</a></li>
+										<li><a href="https://namechk.com/"  target="_blank"  title="">NameChk</a></li>
+										<li><a href="https://github.com/p1ngul1n0/blackbird"  target="_blank"  title="">Black Bird</a></li>
+									</ul>
+								</li>	
+								<li class="menu-parent">Teléfonos
+									<ul class="sub-menu">	
+										<li class="menu-parent">Verificación
+											<ul class="sub-menu">
+												<li><a href="https://veriphone.io/" target="_blank"  title="">Operador 1</a></li>
+												<li><a href="https://www.ding.com/es/topup" target="_blank"  title="">Operador 2</a></li>
+												<li><a href="https://consulta.portabilidad.pe/" target="_blank"  title="">Portabilidad</a></li>
+												<li><a href="https://checatuslineas.osiptel.gob.pe/" target="_blank"  title="">Chequear Líneas</a></li>
+											</ul>
+										</li>
+										<li class="menu-parent">Identificadores
+											<ul class="sub-menu">
+												<li><a href="https://thatsthem.com/reverse-phone-lookup" target="_blank"  title="">Búsqueda inversa</a></li>
+												<li><a href="https://freecarrierlookup.com/" target="_blank"  title="">Búsqueda inversa 2</a></li>
+												<li><a href="https://sync.me/es/" target="_blank"  title="">Sync.me</a></li>
+												<li><a href="https://www.truecaller.com/" target="_blank"  title="">TrueCaller</a></li>
+											</ul>
+										</li>
+										<li class="menu-parent">Directorios
+											<ul class="sub-menu">
+												<li><a href="http://www.claro.com.pe/directorio-de-abonados-fijos/" target="_blank"  title="">Claro Fijos</a></li>
+												<li><a href="http://www.claro.com.pe/directorio-de-abonados-moviles/" target="_blank"  title="">Claro Móviles</a></li>
+												<li><a href="https://www.paginas-blancas.pe/" target="_blank"  title="">Páginas Blancas</a></li>
+												<li><a href="http://www.paginasblancas.pe/" target="_blank"  title="">Páginas Blancas 2</a></li>
+												<li><a href="https://www.paginasamarillas.com.pe/" target="_blank"  title="">Páginas Amarillas</a></li>
+												<li><a href="https://www.datosperu.org/" target="_blank"  title="">Directorios Perú</a></li>												
+											</ul>
+										</li>	
+										<li class="menu-parent">Spam
+											<ul class="sub-menu">
+												<li><a href="https://www.listaspam.com/" target="_blank"  title="">Listas Spam</a></li>
+												<li><a href="https://spamcalls.net/es/" target="_blank"  title="">Spam Calls</a></li>
+											</ul>
+										</li>
+										<li><a href="https://countrycode.org/" target="_blank"  title="">Código de Pais</a></li>
+										<li><a href="https://www.imei.info/" target="_blank"  title="">Comprobar IMEI</a></li>		
+										<li class="menu-parent">SMS Temporales
+											<ul class="sub-menu">
+												<li><a href="https://www.receivesms.co/" target="_blank"  title="">Receive SMS 1</a></li>
+												<li><a href="https://tempsmss.com/es/" target="_blank"  title="">Receive SMS 2</a></li>
+											</ul>
+										</li>
+										<li class="menu-parent">OSINT
+											<ul class="sub-menu">
+												<li><a href="https://osint.rocks/"  target="_blank"  title="">General</a></li>
+												<li><a href="https://epieos.com/" target="_blank"  title="">Huella Digital</a></li>
+												<li><a href="https://t.me/TrueCaller_Z_Bot" target="_blank"  title="">Truecaller Bot</a></li>
+												<li><a href="https://t.me/OffThisContactBot" target="_blank"  title="">Get Contact Bot</a></li>
+											</ul>
+										</li>	
+									</ul>
+								</li>					
+						
+									<li class="menu-parent">Webint
+									<ul class="sub-menu">										
+										<li class="menu-parent">Whois IP
+											<ul class="sub-menu">
+											<!--	<li><a href="https://rextracter.streamlit.app/" target="_blank"  title="">Rextracter OSINT</a></li> -->
+												<li><a href="https://whois.icann.org/es" target="_blank"  title="">Icann Lookup</a></li>
+												<li><a href="https://ipinfo.io/" target="_blank"  title="">IP Info</a></li>
+												<li><a href="https://www.cual-es-mi-ip.net/geolocalizar-ip-mapa" target="_blank"  title="">Geolocalizar IP</a></li>
+												<li><a href="https://whois.domaintools.com/" target="_blank"  title="">Domain or IP</a></li>
+												<li><a href="https://lookup.icann.org/en/lookup" target="_blank"  title="">Icann Lookup</a></li>
+												<li><a href="https://browserleaks.com" target="_blank"  title="">Browser leaks</a></li>
+											</ul>
+										</li>	
+ 							            <li class="menu-parent">Whois Dominios
+											<ul class="sub-menu">
+												<li><a href="https://talosintelligence.com/" target="_blank"  title="">Talos Intelligence</a></li>
+												<li><a href="https://punto.pe/whois.php" target="_blank"  title="">Punto PE</a></li>
+												<li><a href="https://whoisology.com/" target="_blank"  title="">Whoislogy</a></li>
+												<li><a href="https://who.is/" target="_blank"  title="">Who.is</a></li>
+												<li><a href="https://pe.godaddy.com/whois/" target="_blank"  title="">Go Daddy</a></li>
+												<li><a href="https://check-host.net" target="_blank"  title="">CheckHost</a></li>
+											</ul>
+										</li>
+										<li class="menu-parent">Revistas
+											<ul class="sub-menu">	
+												<li><a href="https://www.allyoucanread.com/peru-newspapers/" target="_blank"  title="">All You Can Read</a></li>
+												<li><a href="https://newspapermap.com/#-9.95803,-76.24512,6z" target="_blank"  title="">News Paper Map</a></li>
+												<li><a href="https://www.rcrperu.com/portadas" target="_blank"  title="">Red RCR </a></li>
+												<li><a href="https://issuu.com/diarioahorahuanuco" target="_blank"  title="">Ahora Huánuco</a></li>
+												<li><a href="https://issuu.com/prensaregional" target="_blank"  title="">Prensa Sur</a></li>
+											</ul>
+										</li>	
+										<li class="menu-parent">Personalizados
+											<ul class="sub-menu">	
+												<li><a href="https://cse.google.com/cse?cx=f466f6ea4886845d1" target="_blank"  title="">Google Drive</a></li>
+												<li><a href="https://www.dedigger.com/#gsc.tab=0" target="_blank"  title="">Google Drive 2</a></li>
+												<li><a href="https://www.base-search.net/" target="_blank"  title="">Documentos</a></li>
+												<li><a href="https://web.archive.org/" target="_blank"  title="">Historial Web</a></li>
+												<li><a href="https://www.familysearch.org/es/" target="_blank"  title="">Family Search</a></li>
+											</ul>
+										</li>												
+										<li class="menu-parent">Escanear
+											<ul class="sub-menu">	
+												<li><a href="https://www.virustotal.com/gui/home/upload" target="_blank"  title="">Virus Total</a></li>
+												<li><a href="https://urlscan.io/" target="_blank"  title="">Url Scan</a></li>
+												<!-- <li><a href="https://www.virscan.org/" target="_blank"  title="">Virscan</a></li> -->
+												<li><a href="https://virusscan.jotti.org/" target="_blank"  title="">Jotti Malware</a></li>
+												<li><a href="https://www.similarweb.com/es/" target="_blank"  title="">Similar Web</a></li>
+											</ul>
+										</li>
+										<li class="menu-parent">Cámaras Webs
+											<ul class="sub-menu">	
+												<li><a href="https://cipher387.github.io/webcamcse/" target="_blank"  title="">Webcam CSE</a></li>
+												<li><a href="http://www.insecam.org/" target="_blank"  title="">Insecam</a></li>
+												<li><a href="https://docs.google.com/spreadsheets/d/1vKcsluf6bscSU39ojH-fjetZ1WYC0-Cs/edit?usp=sharing&ouid=117895661947527870218&rtpof=true&sd=true" target="_blank"  title="">Dorks Web Cam</a></li>		
+												<li><a href="https://www.earthcam.com/" target="_blank"  title="">Earth Cam</a></li>	
+											</ul>
+										</li>
+										<li class="menu-parent">Zonas Horarias
+											<ul class="sub-menu">
+												<li><a href="https://www.zeitverschiebung.net/es/timezone/america--lima" target="_blank"  title="">Perú</a></li>
+												<li><a href="https://www.worldtimebuddy.com/" target="_blank"  title="">Mundial</a></li>
+												<li><a href="https://24timezones.com/es/difference" target="_blank"  title="">24 Time Zones</a></li>
+											</ul>
+										</li>
+										<li><a href="https://seintpl.github.io/osint/short-links-verification-cheatsheet" target="_blank"  title="">Acortadores de Enlaces</a></li>									
+										<li><a href="https://shell.cloud.google.com/?fromcloudshell=true&show=ide%2Cterminal&pli=1" target="_blank"  title="">Google Cloud Shell</a></li>
+									</ul>
+									</li>	
+								<li class="menu-parent">Nacional
+									<ul class="sub-menu">
+										<li class="menu-parent">Terrestre
+											<ul class="sub-menu">
+												<li><a href="https://licencias.mtc.gob.pe/#/index" target="_blank"  title="">Consulta Licencias</a></li>
+												<li><a href="https://slcp.mtc.gob.pe/" target="_blank"  title="">Licencia MTC</a></li>
+												<li><a href="https://www.soat.com.pe/servicios-soat/" target="_blank"  title="">Verifica SOAT</a></li>
+												<li><a href="https://www.apeseg.org.pe/consultas-soat/" target="_blank"  title="">Verifica SOAT2</a></li>
+												<li><a href="https://portal.mtc.gob.pe/reportedgtt/form/frmconsultaplacaitv.aspx" target="_blank"  title="">Inspección Técnica</a></li>
+												<li><a href="https://sistemas.atu.gob.pe/ConsultaVehiculo/" target="_blank"  title="">Consulta ATU</a></li>
+												<li><a href="http://www.pit.gob.pe/pit2007/EstadoCuenta.aspx" target="_blank"  title="">Deudas PIT</a></li>
+												<li><a href="https://www.sat.gob.pe/websitev9" target="_blank"  title="">Papeletas SAT</a></li>
+												<li><a href="https://icjc.mtc.gob.pe/" target="_blank"  title="">Reg. Conductores</a></li>
+												<li><a href="https://www.placas.pe/Public/CheckPlateStatus.aspx" target="_blank"  title="">Movimientos Placa</a></li>
+												<li><a href="https://carnet.ai/" target="_blank"  title="">Carnet AI</a></li>
+											</ul>
+										</li>									
+										<li class="menu-parent">Institucional
+											<ul class="sub-menu">
+												<li><a href="https://e-consultaruc.sunat.gob.pe/cl-ti-itmrconsruc/jcrS00Alias" target="_blank"  title="">Consulta RUC</a></li>
+												<li><a href="https://casillas.pj.gob.pe/redam/#" target="_blank"  title="">Deudores de Alimentos</a></li>
+												<!--<li><a href="https://www.pj.gob.pe/wps/wcm/connect/CorteSuprema/s_cortes_suprema_home/as_servicios/as_internos/as_consultas_personal/" target="_blank" title="">Poder Judicial</a></li>
+												<li><a href="http://servicioscal.org.pe/consulta_habilidad/" target="_blank"  title="">Abogados</a></li>-->
+												<li><a href="https://www.transparencia.gob.pe/personal/pte_transparencia_personal.aspx" target="_blank"  title="">Funcionarios Públicos</a></li>
+												<li><a href="https://infogob.jne.gob.pe/Politico" target="_blank"  title="">Políticos</a></li>
+												<li><a href="https://sel.migraciones.gob.pe/servmig-valreg/VerificarPAS" target="_blank"  title="">Pasaporte</a></li>
+												<li><a href="https://www.familysearch.org/search/location/1927168?region=Per%C3%BA" target="_blank"  title="">Nacimiento</a></li>
+												<!--<li><a href="https://eldni.com/" target="_blank"  title="">El DNI</a></li>-->
+												<li><a href="https://buscardni.xyz/motor-de-busqueda-de-nombres-y-apellidos-fechas-de-nacimiento-ingresando-dni/" target="_blank"  title="">Dni por Nombre</a></li>
+												<li><a href="https://dniperu.online/" target="_blank"  title="">Dni por Nombre</a></li>
+												<li><a href="https://manolo.rocks/" target="_blank"  title="">Manolo Rocks</a></li>
+												<!--<li><a href="https://www.enel.pe/es/personas/consulta-ultimo-recibo-deluz.html " target="_blank"  title="">Enel</a></li> -->
+											</ul>
+										</li>
+										<li class="menu-parent">Educación
+											<ul class="sub-menu">
+									
+												<li><a href="https://sistema.cppe.org.pe/view/Colegiado/ " target="_blank"  title="">Profesores</a></li>	
+												<li><a href="https://titulosinstitutos.minedu.gob.pe/" target="_blank"  title="">Grados y Títulos</a></li>
+												<li><a href="https://enlinea.sunedu.gob.pe/" target="_blank"  title="">Sunedu</a></li>
+												<li><a href="http://www.orce.uni.edu.pe/buscaalu.php?op=buscaalu#" target="_blank"  title="">UNI</a></li>
+												<!--<li><a href="http://www.lamolina.edu.pe/portada/html/acerca/emailalumnos.htm" target="_blank"  title="">La Molina</a></li> -->
+												<li><a href="http://www.pucp.edu.pe/consultas-en-linea/consultas-busqueda-de-personas/" target="_blank"  title="">La Católica</a></li>
+											</ul>
+										</li>							
+										<li class="menu-parent">Sunarp
+											<ul class="sub-menu">
+												<li><a href="https://www2.sunarp.gob.pe/consulta-propiedad/inicio" target="_blank"  title="">Propiedades</a></li>
+												<li><a href="https://enlinea.sunarp.gob.pe/sunarpweb/pages/acceso/ingreso.faces" target="_blank"  title="">Partida Predial</a></li>
+												<li><a href="https://www2.sunarp.gob.pe/consulta-vehicular/inicio" target="_blank"  title="">Consulta Vehicular</a></li>
+												<li><a href="https://www.google.com/search?q=google+extranet+sunarp&oq=google+extranet+sunarp" target="_blank"  title="">Extranet Sunarp</a></li>
+												<li><a href="https://www.google.com/search?q=s%C3%ADguelo+sunarp" target="_blank"  title="">Trámites</a></li>
+											</ul>
+										</li>
+										<li class="menu-parent">Mapas
+											<ul class="sub-menu">
+												<li><a href="http://wsgcv.proviasnac.gob.pe/sgcv_emergenciavial" target="_blank"  title="">Provias Nacional</a></li>
+												<li><a href="http://catastro.cofopri.gob.pe/geollaqta/" target="_blank"  title="">Geo Llaqta</a></li>
+												<li><a href="http://municanete.gob.pe/munivirtual/cofopri_en_linea.php " target="_blank"  title="">Predios Cofopri</a></li>
+												<li><a href="http://www.guiacalles.com/movil/" target="_blank"  title="">Guía de Calles</a></li>
+												<li><a href="https://maps.geodir.co/" target="_blank"  title="">Maps Geodir</a></li>
+												<li><a href="https://www.openstreetmap.org/" target="_blank"  title="">Open Street Map</a></li>
+												<li><a href="https://satellites.pro/"  target="_blank"  title="">Satellites Pro</a></li>
+											</ul>
+										</li>					
+										<li class="menu-parent">Aéreo/Marítimo
+											<ul class="sub-menu">
+												<li><a href="https://flightaware.com/live/" target="_blank"  title="">Flight Aware</a></li>
+												<li><a href="https://www.flightera.net/es/" target="_blank"  title="">Flighera</a></li>
+												<li><a href="https://www.flightradar24.com/" target="_blank"  title="">Flight Radar</a></li>
+												<li><a href="https://www.marinetraffic.com/en" target="_blank"  title="">Tráfico Marino</a></li>
+												<li><a href="https://www.vesselfinder.com/" target="_blank"  title="">Localizar navíos</a></li>
+											</ul>
+										</li>								
+										<li class="menu-parent">Salud
+											<ul class="sub-menu">
+												<li><a href="https://app1.susalud.gob.pe/registro/" target="_blank"  title="">Total Seguros</a></li>
+												<li><a href="http://app.sis.gob.pe/SisConsultaEnLinea/Consulta/frmConsultaEnLinea.aspx" target="_blank"  title="">SIS</a></li>
+												<li><a href="https://app-cbo.saludpol.gob.pe:22085/" target="_blank"  title="">Saludpol</a></li>
+											</ul>
+										</li>											
+										<li class="menu-parent">Vivienda
+											<ul class="sub-menu">
+												<li><a href="https://focalizacion.sisfoh.gob.pe/ConsultaCSE/" target="_blank"  title="">Sisfoh</a></li>
+												<li><a href="https://www2.sunarp.gob.pe/consulta-propiedad/inicio" target="_blank"  title="">Propiedades</a></li>
+												<li><a href="https://www.reniec.gob.pe/Adherentes/jsp/ListaUbigeos.jsp" target="_blank"  title="">Ubigeo Reniec</a></li>
+												<li><a href="http://www.codigopostal.gob.pe/pages/invitado/consulta.jsf" target="_blank"  title="">Código Postal</a></li>
+											</ul>
+										</li>											
+										<!--<li class="menu-parent">Jurídico
+											<ul class="sub-menu">
+												<li><a href="http://servicioscal.org.pe/consulta_habilidad/" title="">Informativo</a></li>
+												<li><a href="https://spij.minjus.gob.pe/" target="_blank"  title="">Sistema SPIJ</a></li>
+											</ul>
+										</li>-->	
+										<li class="menu-parent">Extranjería
+											<ul class="sub-menu">
+												<li><a href="https://sel.migraciones.gob.pe/servmig-valreg/VerificarCE?AspxAutoDetectCookieSupport=1" target="_blank"  title="">Carnet de Extranjería</a>
+												</li>
+												<li><a href="https://sel.migraciones.gob.pe/webcarnetptp/VerificarCPTP" target="_blank"  title="">Permiso de Trabajo</a></li>
+												<li><a href="http://www.datajuridica.com/" target="_blank"  title="">Datos Jurídicos</a></li>
+											</ul>
+										</li>	
+										<li class="menu-parent">Sist. Financiero
+											<ul class="sub-menu">
+												<li><a href="https://servicios.sbs.gob.pe/serviciosenlinea" target="_blank"  title="">SBS</a></li>
+												<li><a href="https://zonasegura.onp.gob.pe/onp.portalonp.web/soy_pensionista/consultar_imprimir_informacion_pensionista_onp" target="_blank"  title="">ONP</a></li>
+											</ul>
+										</li>																														
+									</ul>
+								</li>							
+								<li class="menu-parent">Extras
+									<ul class="sub-menu">		
+										<li class="menu-parent">Hacking
+											<ul class="sub-menu">	
+												<li><a href="http://www.zone-h.org/" target="_blank"  title="">Defacement</a></li>
+												<li><a href="https://ransom.wiki/" target="_blank"  title="">Ransomware</a></li>
+												<li><a href="https://www.exploit-db.com/google-hacking-database" target="_blank"  title="">Hacking Database</a></li>
+												<li><a href="https://molbiotools.com/listcompare.php" target="_blank"  title="">Comparar Listas</a></li>
+												<li><a href="https://exifmeta.com/" target="_blank"  title="">Metadatos</a></li>
+												<li><a href="https://grabify.link/" target="_blank"  title="">Rastreadores</a></li>
+												<li><a href="https://talosintelligence.com/"  title="">Talos INT</a></li>
+												<li><a href="https://iknowwhatyoudownload.com/en/peer/"  title="">Historial Torrents</a></li>
+											</ul>
+
+									<li class="menu-parent">Desencriptación
+										<ul class="sub-menu">	
+											<li><a href="https://crackstation.net/" target="_blank"  title="">Crackstation</a></li>
+											<li><a href="https://hashes.com/es/decrypt/hash" target="_blank"  title="">Hashes</a></li>
+										</ul>
+									</li>	
+									<li class="menu-parent">Avatares
+										<ul class="sub-menu">	
+											<li><a href="https://randomuser.me/" target="_blank"  title="">Random User</a></li>
+											<li><a href="https://www.fakenamegenerator.com/" target="_blank"  title="">Fake Generator</a></li>
+											<li><a href="https://generated.photos/faces" target="_blank"  title="">Fotos Generator</a></li>
+											<li><a href="https://www.aiornot.com/" target="_blank"  title="">AI or NOT</a></li>
+											<li><a href="https://seintpl.github.io/AmIReal/" target="_blank"  title="">Am I Real?</a></li>
+										</ul>
+									</li>
+									<li class="menu-parent">Contraseñas
+										<ul class="sub-menu">	
+											<li><a href="https://www.eset.com/es/password-generator/" target="_blank"  title="">Eset</a></li>
+											<li><a href="https://www.avast.com/es-mx/random-password-generator#pc" target="_blank"  title="">Avast</a></li>
+											<li><a href="https://www.sordum.org/passwordgenerator/" target="_blank"  title="">Sordum</a></li>
+											<li><a href="https://www.lastpass.com/es/features/password-generator" target="_blank"  title="">LastPass</a></li>
+										</ul>
+									</li>		
+
+									<li class="menu-parent">Verificar Contraseñas
+										<ul class="sub-menu">	
+											<li><a href="https://www.betterbuys.com/estimating-password-cracking-times/" target="_blank"  title="">BetterBuys</a></li>
+											<li><a href="https://password.kaspersky.com/es/" target="_blank"  title="">Kaspersky</a></li>
+											<li><a href="https://www.security.org/how-secure-is-my-password/" target="_blank"  title="">Security</a></li>
+											<li><a href="https://ciberprotector.com/comprobador-de-contrase%C3%B1as/" target="_blank"  title="">Ciberprotector</a></li>
+										</ul>
+									</li>									
+									<li class="menu-parent">Cripto
+										<ul class="sub-menu">	
+											<li><a href="https://mempool.space/es/" target="_blank"  title="">Mempool Space</a></li>
+											<li><a href="https://www.blockchain.com/explorer" target="_blank"  title="">Blockchain</a></li>
+										</ul>
+									</li>																
+									</li>
+									<li class="menu-parent">Eliminar Datos
+										<ul class="sub-menu">	
+											<li><a href="https://search.google.com/search-console/remove-outdated-content"  title="">Google Search</a></li>
+											<li><a href="https://inteltechniques.com/data/workbook.pdf"  title="">Inteltechniques</a></li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+						 </ul>		
+						</nav>
+						<div id="bar">
+							<i class="fas fa-bars"></i>
+						</div>
+						<div id="close">
+							<i class="fas fa-times"></i>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- Header Close -->
+		<div class="banner">
+			<div class="owl-four owl-carousel" itemprop="image">
+				<img src="images/Portada2.jpg" alt="Image of Bannner">
+				<img src="images/Portada2.jpg" alt="Image of Bannner">
+		<!--		<img src="images/page-banner3.jpg" alt="Image of Bannner">  -->
+			</div>
+			<div class="container" itemprop="description">
+				<h1>Herramientas OSINT/SOCMINT Disponibles para Perú 2025</h1>
+				<h3>Este proyecto de código abierto ofrece una recopilación de sitios web peruanos obtenidos de fuentes públicas, facilitando la adquisición de información mediante OSINT y SOCMINT.</h3><br>
+				<h3>Este recurso web ha sido creado exclusivamente con fines educativos y sin ánimo de lucro. No nos hacemos responsables del uso indebido de la plataforma web.</h3><br>
+				<h3>¡No apoyamos ninguna actividad ilegal!</h3>
+			</div>
+			 <div id="owl-four-nav" class="owl-nav"></div>
+		</div>
+		<div class="banner">
+			<div class="owl-five owl-carousel owl-theme">
+				<div class="item-video">
+	            	<iframe width="100%" height="450" src="https://www.youtube.com/embed/LpkK3HbRX4c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	            </div>
+				<div class="item-video">
+	            	<iframe width="100%" height="450" src="https://www.youtube.com/embed/oponNTbpKDw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	            </div>
+				<div class="item-video">
+            		<iframe width="100%" height="450" src="https://www.youtube.com/embed/MnsQOacu7dk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+            		</iframe>
+	            </div>
+				<div class="item-video">
+            		<iframe width="100%" height="450" src="https://www.youtube.com/embed/S2CJoars-wU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+            		</iframe>
+	            </div>				
+	            <div class="item-video">
+            		<iframe width="100%" height="450" src="https://www.youtube.com/embed/xZc9bp6t-BM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+            		</iframe>
+	            </div>
+	            <div class="item-video">
+            		<iframe width="100%" height="450" src="https://www.youtube.com/embed/Asju0k7FB4o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+            		</iframe>
+	            </div>
+	            <div class="item-video">
+	            	<iframe width="100%" height="450" src="https://www.youtube.com/embed/lwGUra-qL5U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+					</iframe>
+	            </div>
+				<div class="item-video">
+	            	<iframe width="100%" height="450" src="https://www.youtube.com/embed/AqrmoiQSuks" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	            </div>
+          </div>
+		</div>
+		<div class="page-heading">
+			<div class="container">
+				<h2>NUESTROS CURSOS DE FORMACIÓN EN UDEMY:</h2>
+			</div>
+		</div>
+		
+		<!-- Popular courses End -->
+		<div class="learn-courses">
+			<div class="container">
+				<div class="courses">
+					<div class="owl-one owl-carousel">
+						<div class="box-wrap" itemprop="event" itemscope itemtype=" http://schema.org/Course">
+							<div class="img-wrap" itemprop="image"><img src="images/cursosimg/socmintgratuito.jpg" alt="courses picture"></div>
+								<a href="https://www.udemy.com/course/curso-gratuito-de-osint-socmint-y-casos-reales/?referralCode=30DE177839B4941CFC44" target="_blank" class="learn-desining-banner" itemprop="name">¡NUEVO!. Aprenda a realizar Inteligencia en Redes sociales >>></a>
+							<div class="box-body" itemprop="description">
+								<p><br><br><br>Aprenda a realizar inteligencia en redes sociales aplicando técnicas y metodologías a través de diversos casos. Además obtendrás un regalo de inscripción con herramientas y recursos gratis.</p>
+								<section itemprop="time">
+									<p><span>Duración:</span> 01 hora y 59 minutos</p>
+									<p><span>Idioma:</span> Español </p>
+									<p><span>Costo/Precio:</span> Gratuito </p>
+								</section>
+							</div>
+						</div>
+						<div class="box-wrap" itemprop="event" itemscope itemtype=" http://schema.org/Course">
+							<div class="img-wrap" itemprop="image"><img src="images/cursosimg/importanciaOSINT.png" alt="courses picture"></div>
+								<a href="https://www.udemy.com/course/la-importancia-del-osint-y-socmint-en-las-huellas-digitales/?referralCode=53B08A9494E3744586DE" target="_blank" class="learn-desining-banner" itemprop="name">La importancia del OSINT y SOCMINT en las Huellas Digitales >>></a>
+							<div class="box-body" itemprop="description">
+								<p><br><br><br>Aprende la importancia y ejecución de la inteligencia en fuente abierta (OSINT) en Redes Sociales (SOCMINT) a través de las diversas ciberinvestigaciones de huellas digitales.</p>
+								<section itemprop="time">
+									<p><span>Duración:</span> 01 hora y 05 minutos</p>
+									<p><span>Idioma:</span> Español </p>
+									<p><span>Costo/Precio:</span> Gratuito </p>
+								</section>
+							</div>
+						</div>
+						<div class="box-wrap" itemprop="event" itemscope itemtype=" http://schema.org/Course">
+							<div class="img-wrap"  itemprop="image"><img src="images/cursosimg/importanciaBOTS.png" alt="courses picture"></div>
+								<a href="https://www.udemy.com/course/aprende-la-importancia-de-bots-de-telegram-para-investigaciones-osint/?referralCode=34A2EA8DD4D58F1BA397" target="_blank" class="learn-desining-banner" itemprop="name">La importancia de Bots Telegram para la aplicación del OSINT >>></a>
+							<div class="box-body" itemprop="description">
+								<p><br><br><br>Aprende sobre la Importancia de los Bots de Telegram para realizar diversas Investigaciones OSINT/SOCMINT, todo a través de este taller exclusivo de formación.</p>
+								<section itemprop="time">
+									<p><span>Duración:</span> 01 hora y 10 minutos</p>
+									<p><span>Idioma:</span> Español </p>
+									<p><span>Costo/Precio:</span> Gratuito </p>
+								</section>
+							</div>
+						</div>
+						<div class="box-wrap" itemprop="event" itemscope itemtype=" http://schema.org/Course">
+							<div class="img-wrap" itemprop="image"><img src="images/cursosimg/socmintbasico.png" alt="courses picture"></div>
+								<a href="https://www.udemy.com/course/aprende-a-obtener-informacion-osint-en-redes-sociales/?referralCode=0FDC57271907FFF85B25" target="_blank" class="learn-desining-banner" itemprop="name">SOCMINT BÁSICO. Aprende a investigar en Redes Sociales >>></a>
+							<div class="box-body" itemprop="description">
+								<p><br><br><br>Con este taller de formación aprenderás a recopilar, analizar y procesar inteligencia a través de la obtención de información de las diferentes redes sociales, con herramientas totalmente actualizadas.</p>
+								<section itemprop="time">
+									<p><span>Duración:</span> 09 horas y 05 minutos</p>
+									<p><span>Idioma:</span> Español </p>
+									<p><span>Costo/Precio:</span> S/. 59.90 </p>
+								</section>
+							</div>
+						</div>
+
+						<div class="box-wrap" itemprop="event" itemscope itemtype=" http://schema.org/Course">
+							<div class="img-wrap" itemprop="image"><img src="images/cursosimg/socmintnivel2.png" alt="courses picture"></div>
+								<a href="https://www.udemy.com/course/aprende-a-realizar-osint-en-redes-sociales-socmint-nivel-2/?referralCode=63D4FF5189FB47A85E16" target="_blank" class="learn-desining-banner" itemprop="name">SOCMINT BÁSICO 02. Aprenda OSINT en Redes Sociales desde 0 >>></a>
+							<div class="box-body" itemprop="description">
+								<p><br><br><br>Aprende de manera dinámica a recopilar, procesar información y crear OSINT en redes sociales (SOCMINT). Este curso es 20 % teórico y 80 % práctico con casos con situaciones reales.</p>
+								<section itemprop="time">
+									<p><span>Duración:</span> 08 horas y 20 minutos</p>
+									<p><span>Idioma:</span> Español </p>
+									<p><span>Costo/Precio:</span> S/. 64.90  </p>
+								</section>
+							</div>
+						</div>
+						<div class="box-wrap" itemprop="event" itemscope itemtype=" http://schema.org/Course">
+							<div class="img-wrap"  itemprop="image"><img src="images/cursosimg/socmintavanzado.png" alt="courses picture"></div>
+								<a href="https://www.udemy.com/course/aprende-socmint-avanzado-desde-cero/?referralCode=3DDC4F5AEC9CE03E4EDD" target="_blank" class="learn-desining-banner" itemprop="name">SOCMINT AVANZADO. Aprende a investigar en Redes Sociales >>></a>
+							<div class="box-body" itemprop="description">
+								<p><br><br><br>Aprende desde 0 a investigar en las Redes Sociales, empezando desde la securización de nuestra huella digital. Conocerás las diversas herramientas en entornos Windows, en la nube y Kali Linux.</p>
+								<section itemprop="time">
+									<p><span>Duración:</span> 12 horas y 52 minutos</p>
+									<p><span>Idioma:</span> Español </p>
+									<p><span>Costo/Precio:</span> S/. 64.90 </p>
+								</section>
+							</div>
+						</div>
+						<div class="box-wrap" itemprop="event" itemscope itemtype=" http://schema.org/Course">
+							<div class="img-wrap"  itemprop="image"><img src="images/cursosimg/casosreales.jpg" alt="courses picture"></div>
+								<a href="https://www.udemy.com/course/aprende-osint-y-socmint-con-casos-y-situaciones-reales/?referralCode=294D19B517C56FE9C8E5" target="_blank" class="learn-desining-banner" itemprop="name">Aprenda OSINT/SOCMINT con casos y situaciones reales >>></a>
+							<div class="box-body" itemprop="description">
+								<p><br><br><br>Sé parte de este curso donde resuelvo más de 15 casos OSINT y SOCMINT con situaciones reales, utilizando diversas metodologías de investigación que todo analista e investigador debe de conocer.</p>
+								<section itemprop="time">
+									<p><span>Duración:</span> 14 horas y 02 minutos</p>
+									<p><span>Idioma:</span> Español </p>
+									<p><span>Costo/Precio:</span> S/. 64.90  </p>
+								</section>
+							</div>
+						</div>
+						<div class="box-wrap" itemprop="event" itemscope itemtype=" http://schema.org/Course">
+							<div class="img-wrap"  itemprop="image"><img src="images/cursosimg/cursoEGOSURFING.jpg" alt="courses picture"></div>
+								<a href="https://www.udemy.com/course/obtencion-de-huellas-digitales-egosurfing/?referralCode=A8B4AF8DBA1E0E5A083C" target="_blank" class="learn-desining-banner" itemprop="name">Curso de Obtención de Huellas digitales & Egosurfing >>></a>
+							<div class="box-body" itemprop="description">
+								<p><br><br><br>Aprende a gestionar tu identidad digital, protege tu privacidad, eliminar parte de tus huellas y construye una presencia positiva con este curso creado exclusivamente para ti.</p>
+								<section itemprop="time">
+									<p><span>Duración:</span> 10 horas y 35 minutos</p>
+									<p><span>Idioma:</span> Español </p>
+									<p><span>Costo/Precio:</span> S/. 59.90  </p>
+								</section>
+							</div>
+						</div>
+					<!--	<div class="box-wrap" itemprop="event" itemscope itemtype=" http://schema.org/Course">
+							<div class="img-wrap" itemprop="image"><img src="images/cursosimg/cursobotstelegram.png" alt="courses picture"></div>
+								<a href="https://www.udemy.com/course/aprende-a-usar-bots-de-telegram-para-investigaciones-osint/?referralCode=534A8C9844244123285E" target="_blank" class="learn-desining-banner" itemprop="name">Aprende a usar BOTS de Telegram para OSINT y SOCMINT >>></a>
+							<div class="box-body" itemprop="description">
+								<p><br>Con este taller técnico de formación aprenderás a realizar inteligencia OSINT e investigaciones en redes sociales a través, a través de BOTS de Telegram.</p>
+							</div>
+						</div> -->
+						<div class="box-wrap" itemprop="event" itemscope itemtype=" http://schema.org/Course">
+							<div class="img-wrap" itemprop="image"><img src="images/cursosimg/tecnicasinteligencia.png" alt="courses picture"></div>
+								<a href="https://www.udemy.com/course/osint-aprenda-tecnicas-de-investigacion-e-inteligencia/?referralCode=CC387D40D3BD6F9E6095" target="_blank" class="learn-desining-banner" itemprop="name">OSINT. Técnicas de Investigación e Inteligencia >>></a>
+							<div class="box-body" itemprop="description">
+								<p><br><br><br>Con este taller aprenderás a realizar inteligencia, procesamiento y análisis de datos obtenidos a través de OSINT, con herramientas como Power Bi, Gephi, IBM I2 Analyst Notebook, entre otros.</p>
+								<section itemprop="time">
+									<p><span>Duración:</span> 09 horas y 04 minutos</p>
+									<p><span>Idioma:</span> Español </p>
+									<p><span>Costo/Precio:</span> S/. 59.90  </p>
+								</section>
+								</section>
+							</div>
+						</div>
+						<div class="box-wrap" itemprop="event" itemscope itemtype="http://schema.org/Course">
+							<div class="img-wrap" itemprop="image">
+								<img src="images/cursosimg/Open-Source-ENG.png" alt="courses picture">
+							</div>
+							<a href="https://www.udemy.com/course/open-source-intelligence-osint-social-media-socmint-basic/?referralCode=C7240BEC11210401C42A" 
+							   target="_blank" class="learn-desining-banner" itemprop="name">Open-Source Intelligence & SOCMINT: Social Media Intelligence >>>
+							</a>
+							<div class="box-body" itemprop="description">
+								<p><br><br><br>Aprende de forma dinámica a recopilar, procesar información y crear OSINT en redes sociales (SOCMINT). Este curso es 20% teórico y 80% práctico con casos con situaciones reales.</p>
+								<section itemprop="time">
+									<p><span>Duración:</span> 7 horas y 58 minutos</p>
+									<p><span>Idioma:</span> Inglés</p>
+									<p><span>Costo/Precio:</span> $ 12.99</p>
+								</section>
+							</div>
+						</div>
+						<div class="box-wrap" itemprop="event" itemscope itemtype=" http://schema.org/Course">
+							<div class="img-wrap" itemprop="image"><img src="images/cursosimg/LISAsocmint.jpg" alt="courses picture"></div>
+								<a href="https://www.lisainstitute.com/products/curso-avanzado-analista-socmint-inteligencia-de-redes-sociales" target="_blank" class="learn-desining-banner" itemprop="name">LISA INSTITUTE. Curso Avanzado de Analista en SOCMINT >>></a>
+							<div class="box-body" itemprop="description">
+								<p><br><br><br>Aprende a dominar los métodos y técnicas para recopilar, procesar, analizar e interpretar información de forma profesional a través de la Inteligencia de Redes Sociales con este curso de más de 150 horas.</p>
+								<section itemprop="time">
+									<p><span>Duración:</span> 150 horas</p>
+									<p><span>Idioma:</span> Español </p>
+									<p><span>Costo/Precio:</span> S/. 1,518.00 </p>
+								</section>
+							</div>
+						</div>
+						<div class="box-wrap" itemprop="event" itemscope itemtype=" http://schema.org/Course">
+							<div class="img-wrap" itemprop="image"><img src="images/cursosimg/LISAosintexperto.jpg" alt="courses picture"></div>
+								<a href="https://www.lisainstitute.com/products/curso-experto-osint-tecnicas-de-investigacion-online" target="_blank" class="learn-desining-banner" itemprop="name">LISA INSTITUTE. Curso Experto en OSINT: Investigación e INT. >>></a>
+							<div class="box-body" itemprop="description">
+								<p><br><br><br>Aprende a dominar los métodos y técnicas para recopilar, procesar, analizar e interpretar información de forma profesional a través de la Inteligencia en Fuentes abiertas de más de 150 horas de formación.</p>
+								<section itemprop="time">
+									<p><span>Duración:</span> 150 horas</p>
+									<p><span>Idioma:</span> Español </p>
+									<p><span>Costo/Precio:</span> S/. 1,538.00 </p>
+								</section>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+	<!--	<div class="page-heading">
+			<div class="container">
+				<h2><a href="https://linktr.ee/proyectosmanuelbot" target="_blank" itemprop="name">Accede a nuestros cupones de descuento</a></h2>
+			</div>
+			</div> -->
+		</div>
+			<!-- Learn courses End -->
+		<section class="whyUs-section">
+			<div class="container">
+				<div class="featured-points">
+					<ul>
+					<!--<li><a href="https://linktr.ee/proyectosmanuelbot" target="_blank"><i class="fas fa-book"></i> free books for students</a></li>
+						<li><i class="fas fa-chalkboard-teacher"></i> experienced teachers</li>
+						<li><i class="fas fa-money-check-alt"></i> affordable fees</li>-->
+						<li><a href="https://linktr.ee/proyectosmanuelbot" target="_blank"><i class="fas fa-money-check-alt"></i>Nuestros cupones de descuento</a></li>
+						<li><a href="https://www.patreon.com/ManuelBot59" target="_blank"><i class="fas fa-book"></i> Post exclusivos en Patreon</a></li>	
+						<li><a href="https://www.lisanews.org/author/manuel_travezano/" target="_blank"><i class="fas fa-book"></i> Artículos en LISA Institute</a></li>
+						<li><a href="https://t.me/OsintManuelBot59" target="_blank"><i class="fas fa-book"></i> Canal en Telegram</a></li>		
+						<li><a href="https://t.me/ManuelBot59_Bot" target="_blank"><i class="fas fa-address-book"></i> Contáctame</a></li>		
+					</ul>
+				</div>
+				<div class="whyus-wrap">
+				  <h1>¿POR QUÉ FORMARTE CON NOSOTROS?</h1>
+				  <p itemprop="description">
+					Lo que nos distingue no es solo la calidad del contenido, sino la experiencia y el enfoque único que ofrecemos en cada curso: <br> <br>
+					- <strong>Más que solo herramientas:</strong> En cada módulo de nuestros cursos, no solo exploramos herramientas, sino que enseñamos técnicas, metodologías y procedimientos diseñados para transformar datos e información en inteligencia. Nuestro enfoque fomenta la curiosidad y el pensamiento crítico.<br> 
+					- <strong>Resolución de Casos Reales</strong>: Cada módulo de cada curso integra casos basados en situaciones auténticas, lo que permite a los estudiantes aplicar lo aprendido en escenarios que simulan investigaciones reales. <br>
+					- <strong>Metodologías Activas y Modernas</strong>: Priorizamos técnicas y metodologías innovadoras y adaptadas a las redes sociales, asegurando que los participantes estén siempre a la vanguardia. <br>
+					- <strong>Experiencia en el Campo</strong>: Todos los cursos están diseñados y dirigidos por un Analista Táctico de Ciberinteligencia de la Policía de Perú, con más de 8 años de experiencia activa en investigaciones digitales y resolución de casos complejos. Este conocimiento práctico se traduce en un aprendizaje enriquecido por historias reales, ejemplos prácticos y estrategias efectivas.
+					  </p>
+				</div>
+				<!--	<a href="#" class="read-more-btn">read more</a> -->
+				</div>
+		</section>
+		<!-- Closed WhyUs section -->
+		<section class="page-heading">
+			<div class="container">
+				<h2>GALERÍA DE IMÁGENES</h2>
+			</div>
+		</section>
+		<section class="gallery-images-section" itemprop="image" itemscope itemtype=" http://schema.org/ImageGallery">
+				
+			<div class="gallery-img-wrap">
+				<a href="./images/gallery/img-19.jpg" data-lightbox="example-set" data-title="Haz clic en la mitad derecha de la imagen para avanzar.">
+					<img src="./images/gallery/img-19.jpg" alt="gallery-images">
+				</a>
+			</div>				
+			<div class="gallery-img-wrap">
+				<a href="./images/gallery/img-18.jpg" data-lightbox="example-set" data-title="Haz clic en la mitad derecha de la imagen para avanzar.">
+					<img src="./images/gallery/img-18.jpg" alt="gallery-images">
+				</a>
+			</div>	
+			<div class="gallery-img-wrap">
+				<a href="./images/gallery/img-17.jpg" data-lightbox="example-set" data-title="Haz clic en la mitad derecha de la imagen para avanzar.">
+					<img src="./images/gallery/img-17.jpg" alt="gallery-images">
+				</a>
+			</div>			
+			<div class="gallery-img-wrap">
+				<a href="./images/gallery/img-16.jpg" data-lightbox="example-set" data-title="Haz clic en la mitad derecha de la imagen para avanzar.">
+					<img src="./images/gallery/img-16.jpg" alt="gallery-images">
+				</a>
+			</div>			
+			<div class="gallery-img-wrap">
+				<a href="./images/gallery/img-15.jpg" data-lightbox="example-set" data-title="Haz clic en la mitad derecha de la imagen para avanzar.">
+					<img src="./images/gallery/img-15.jpg" alt="gallery-images">
+				</a>
+			</div>			
+			<div class="gallery-img-wrap">
+				<a href="./images/gallery/img-14.jpg" data-lightbox="example-set" data-title="Haz clic en la mitad derecha de la imagen para avanzar.">
+					<img src="./images/gallery/img-14.jpg" alt="gallery-images">
+				</a>
+			</div>			
+			<div class="gallery-img-wrap">
+				<a href="./images/gallery/img-13.jpg" data-lightbox="example-set" data-title="Haz clic en la mitad derecha de la imagen para avanzar.">
+					<img src="./images/gallery/img-13.jpg" alt="gallery-images">
+				</a>
+			</div>		
+			<div class="gallery-img-wrap">
+				<a href="./images/gallery/img-12.jpg" data-lightbox="example-set" data-title="Haz clic en la mitad derecha de la imagen para avanzar.">
+					<img src="./images/gallery/img-12.jpg" alt="gallery-images">
+				</a>
+			</div>				
+			<div class="gallery-img-wrap">
+				<a href="./images/gallery/img-11.jpg" data-lightbox="example-set" data-title="Haz clic en la mitad derecha de la imagen para avanzar.">
+					<img src="./images/gallery/img-11.jpg" alt="gallery-images">
+				</a>
+			</div>				
+			<div class="gallery-img-wrap">
+				<a href="./images/gallery/img-10.jpg" data-lightbox="example-set" data-title="Haz clic en la mitad derecha de la imagen para avanzar.">
+					<img src="./images/gallery/img-10.jpg" alt="gallery-images">
+				</a>
+			</div>					
+			<div class="gallery-img-wrap">
+				<a href="./images/gallery/img-9.jpg" data-lightbox="example-set" data-title="Haz clic en la mitad derecha de la imagen para avanzar.">
+					<img src="./images/gallery/img-9.jpg" alt="gallery-images">
+				</a>
+			</div>			
+			<div class="gallery-img-wrap">
+				<a href="./images/gallery/img-8.jpg" data-lightbox="example-set" data-title="Haz clic en la mitad derecha de la imagen para avanzar.">
+					<img src="./images/gallery/img-8.jpg" alt="gallery-images">
+				</a>
+			</div>		
+			<div class="gallery-img-wrap">
+				<a href="./images/gallery/img-7.jpg" data-lightbox="example-set" data-title="Haz clic en la mitad derecha de la imagen para avanzar.">
+					<img src="./images/gallery/img-7.jpg" alt="gallery-images">
+				</a>
+			</div>				
+			<div class="gallery-img-wrap">
+				<a href="./images/gallery/img-6.jpg" data-lightbox="example-set" data-title="Haz clic en la mitad derecha de la imagen para avanzar.">
+					<img src="./images/gallery/img-6.jpg" alt="gallery-images">
+				</a>
+			</div>		
+			<div class="gallery-img-wrap">
+				<a href="./images/gallery/img-5.jpg" data-lightbox="example-set" data-title="Haz clic en la mitad derecha de la imagen para avanzar.">
+					<img src="./images/gallery/img-5.jpg" alt="gallery-images">
+				</a>
+			</div>		
+			<div class="gallery-img-wrap">
+				<a href="./images/gallery/img-4.jpg" data-lightbox="example-set" data-title="Haz clic en la mitad derecha de la imagen para avanzar.">
+					<img src="./images/gallery/img-4.jpg" alt="gallery-images">
+				</a>
+			</div>			
+			<div class="gallery-img-wrap">
+				<a href="./images/gallery/img-3.jpg" data-lightbox="example-set" data-title="Haz clic en la mitad derecha de la imagen para avanzar.">
+					<img src="./images/gallery/img-3.jpg" alt="gallery-images">
+				</a>
+			</div>
+			<div class="gallery-img-wrap">
+				<a href="./images/gallery/img-2-1.jpg" data-lightbox="example-set" data-title="Haz clic en la mitad derecha de la imagen para avanzar.">
+					<img src="./images/gallery/img-2-1.jpg" alt="gallery-images">
+				</a>
+			</div>	
+			<div class="gallery-img-wrap">
+				<a href="./images/gallery/img-2.jpg" data-lightbox="example-set" data-title="Haz clic en la mitad derecha de la imagen para avanzar.">
+					<img src="./images/gallery/img-2.jpg" alt="gallery-images">
+				</a>
+			</div>
+			<div class="gallery-img-wrap">
+				<a href="./images/gallery/img-1.jpg" data-lightbox="example-set" data-title="Haz clic en la mitad derecha de la imagen para avanzar.">
+					<img src="./images/gallery/img-1.jpg" alt="gallery-images">
+				</a>
+			</div>
+		</section>
+		<!-- End of gallery Images -->
+		<section class="what-other-say">
+			<div class="container">
+				<h4 class="article-subtitle">RESEÑAS DE NUESTROS ALUMNOS</h4>
+				<h2 class="head">Comentarios en NUESTROS CURSOS DE FORMACIÓN</h2>
+				<div class="three owl-carousel owl-theme">
+					<!-- 01 -->
+					<div class="customer-item" itemscope itemtype="http://schema.org/Rating">
+						<div class="border">
+							<div class="customer">
+								<figure>
+									<img class="customer-img" src="images/avatar2.png" alt="Person image">
+									<figcaption>
+										<span itemprop="author">Yorge Camargo</span>
+							 	<!-- 		<div class="rateYo" itemprop="ratingValue">1</div>-->
+									</figcaption>
+								</figure>
+							</div>
+							<div class="customer-review">
+								<p itemprop="description">
+									"Lo recomiendo 100% tanto la teoría como la practica diariamente no,
+									nos damos cuenta de lo mucho que nos exponemos digitalmente. Si
+									realizas las practicas realmente aprendes en mi caso fue así".
+
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="customer-item" itemscope itemtype="http://schema.org/Rating">
+						<div class="border">
+							<div class="customer">
+								<figure>
+									<img class="customer-img" src="images/avatar2.png" alt="Person image">
+									<figcaption>
+										<span itemprop="author">Roberto Flores Juarez</span>
+							<!-- 			<div class="rateYo" itemprop="ratingValue">5</div> -->
+									</figcaption>
+								</figure>
+							</div>
+							<div class="customer-review">
+								<p itemprop="description">
+									"Curso excelente algunas herramientas y/o procedimientos lentos para obtener
+									resultados pero en general satisfecho".
+								</p>
+							</div>
+						</div>
+					</div>		
+					<!-- 02 -->
+					<div class="customer-item" itemscope itemtype="http://schema.org/Rating">
+						<div class="border">
+							<div class="customer">
+								<figure>
+									<img class="customer-img" src="images/avatar2.png" alt="Person image">
+									<figcaption>
+										<span itemprop="author">Miguel Ángel Carrasco Garrido</span>
+								<!--		<div class="rateYo" itemprop="ratingValue">5</div>-->
+									</figcaption>
+								</figure>
+							</div>
+							<div class="customer-review">
+								<p itemprop="description">
+									"Muy buen curso introductorio, además comparte los recursos. He hecho el curso
+									de SOCMINT o inteligencia de datos en fuentes abiertas relativo a redes sociales
+									y me ha gustado bastante. Muy posiblemente los curse todos o la gran mayoría". 
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="customer-item" itemscope itemtype="http://schema.org/Rating">
+						<div class="border">
+							<div class="customer">
+								<figure>
+									<img class="customer-img" src="images/avatar2.png" alt="Person image">
+									<figcaption>
+										<span itemprop="author">Henry Eduardo Luna</span>
+							<!-- 			<div class="rateYo" itemprop="ratingValue">5</div> -->
+									</figcaption>
+								</figure>
+							</div>
+							<div class="customer-review">
+								<p itemprop="description">
+									"La información brindada es interesante, actalizada, fuentes adecuadas; con
+									una explicación bien clara".
+								</p>
+							</div>
+						</div>
+					</div>						
+					<div class="customer-item" itemscope itemtype="http://schema.org/Rating">
+						<div class="border">
+							<div class="customer">
+								<figure>
+									<img class="customer-img" src="images/avatar2.png" alt="Person image">
+									<figcaption>
+										<span itemprop="author">Diego Segade</span>
+							<!--			<div class="rateYo" itemprop="ratingValue">5</div>-->
+									</figcaption>
+								</figure>
+							</div>
+							<div class="customer-review">
+								<p itemprop="description">
+									"Magnífico formador. Gran profesional. El curso es excelente"
+								</p>
+							</div>
+						</div>
+					</div>	
+					<div class="customer-item" itemscope itemtype="http://schema.org/Rating">
+						<div class="border">
+							<div class="customer">
+								<figure>
+									<img class="customer-img" src="images/avatar2.png" alt="Person image">
+									<figcaption>
+										<span itemprop="author">Candido G.</span>
+							<!--			<div class="rateYo" itemprop="ratingValue">5</div>-->
+									</figcaption>
+								</figure>
+							</div>
+							<div class="customer-review">
+								<p itemprop="description">
+									"[PT-BR] Curso muito bom acerca das possibilidades dos bots do Telegram para
+									 investigações através de OSINT. Especialmente útil quando se está apenas com
+									 acesso a um dispositivo móvel. Excelente curso do professor Manuel, 
+									 boa didática e direto ao ponto."
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- 03 -->
+					<div class="customer-item" itemscope itemtype="http://schema.org/Rating">
+						<div class="border">
+							<div class="customer">
+								<figure>
+									<img class="customer-img" src="images/avatar2.png" alt="Person image">
+									<figcaption>
+										<span itemprop="author">Manuel Q.</span>
+								<!--		<div class="rateYo" itemprop="ratingValue">5</div>-->
+									</figcaption>
+								</figure>
+							</div>
+							<div class="customer-review">
+								<p itemprop="description">
+									"Muy buen contenido Manuel, felicitarle por tu dedicación en este mundo del
+									 OSINT, en realidad te sigo por twitter y por tu canal de telegram, y eh
+									 aprendido muchísimo, con este taller eh aprendido mucho más."
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- 04 -->
+					<div class="customer-item" itemscope itemtype="http://schema.org/Rating">
+						<div class="border">
+							<div class="customer">
+								<figure>
+									<img class="customer-img" src="images/avatar2.png" alt="Person image">
+									<figcaption>
+										<span itemprop="author">Santiago Sánchez Navas</span>
+									<!--	<div class="rateYo" itemprop="ratingValue">5</div>-->
+									</figcaption>
+								</figure>
+							</div>
+							<div class="customer-review">
+								<p itemprop="description">
+									"Muy buena y además es una actualización del curso lo que le da un
+									plus de calidad, nos evita el trabajo que el profesor ya ha realizado
+									y nos mantiene al día".
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- 05 -->
+					<div class="customer-item" itemscope itemtype="http://schema.org/Rating">
+						<div class="border">
+							<div class="customer">
+								<figure>
+									<img class="customer-img" src="images/avatar2.png" alt="Person image">
+									<figcaption>
+										<span itemprop="author">Marcio</span>
+									<!--	<div class="rateYo" itemprop="ratingValue">10</div> -->
+									</figcaption>
+								</figure>
+							</div>
+							<div class="customer-review">
+								<p itemprop="description">
+									"Seu curso é muito bom, vc é objetivo, didático e claro nas suas colocações,
+									 mas senti falta de bots de phishing para fins educativos, é claro!. Novos
+									 cursos, me avise aqui. Muito obrigado."
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- 05 -->
+					<div class="customer-item" itemscope itemtype="http://schema.org/Rating">
+						<div class="border">
+							<div class="customer">
+								<figure>
+									<img class="customer-img" src="images/avatar2.png" alt="Person image">
+									<figcaption>
+										<span itemprop="author">John Bruno M.</span>
+									<!-- 	<div class="rateYo" itemprop="ratingValue">8</div>-->
+									</figcaption>
+								</figure>
+							</div>
+							<div class="customer-review">
+								<p itemprop="description">
+									"Muy buena enseñanza y explicación con buenos recursos...."
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div align="center">	
+				<img src="https://www.flagcounter.me/eHs/" alt="Flag Counter">
+				<br>
+																						      
+			</div>	
+		</section>
+		<footer class="page-footer" itemprop="footer" itemscope itemtype="http://schema.org/WPFooter">
+<br><br>
+			<!-- End of box-Wrap -->
+			<div class="footer-second-section">
+				<div class="container">
+					<hr class="footer-line">
+					<ul class="social-list">
+						<li><a href="https://www.facebook.com/ManuelBot590/" target="_blank" title="Facebook"><i class="fab fa-facebook-square"></i></a></li>
+						<li><a href="https://x.com/ManuelBot59" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a></li>
+						<li><a href="https://www.youtube.com/@ManuelBot59" target="_blank" title="Youtube"><i class="fab fa-youtube"></i></a></li>
+						<li><a href="https://www.linkedin.com/in/manuelbot59/" target="_blank" title="Linkedin"><i class="fab fa-linkedin-in"></i></a></li>		
+						<li><a href="https://www.instagram.com/manuelbot59_/" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a></li>
+					</ul>
+					<hr class="footer-line">
+				</div>
+			</div>
+			<div class="footer-last-section">
+				<div class="container">
+					<p>OSINT &copy; 2025 Manuel Travezaño <span> | </span> Sitio web creado con fines exclusivamente educativo.</p>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script type="application/ld+json">
+		{
+		  "@context":"http://schema.org/",
+		  "@type":"AggregateRating",
+		"itemReviewed":{
+		"@type":"ManuelBot59",
+		"name":"Manuel Bot"
+		},
+		"ratingValue":"4.9",
+		"bestRating":"5",
+		"ratingCount": "15541",    
+		"reviewCount":"20050",
+		"author":{
+		"@type":"ManuelBot",
+		"@id":"https://manuelbot59.github.io/"
+		}}
+	</script>
+	<script type="text/javascript" src="js/lightbox.js"></script>
+	<script type="text/javascript" src="js/all.js"></script>
+	<script type="text/javascript" src="js/isotope.pkgd.min.js"></script>
+	<script type="text/javascript" src="js/owl.carousel.js"></script>
+	<script type="text/javascript" src="js/jquery.flexslider.js"></script>
+	<script type="text/javascript" src="js/jquery.rateyo.js"></script>
+	<script type="text/javascript" src="js/jquery.mmenu.all.js"></script>
+	<script type="text/javascript" src="js/jquery.meanmenu.min.js"></script>
+	<script type="text/javascript" src="js/custom.js"></script>
+	<script language= "Javascript">
+		function disableselect(e){
+		return false
+		}
+		function reEnable(){
+		return true
+		}
+		document.onselectstart=new Function ("return false")
+		if (window.sidebar){
+		document.onmousedown=disableselect
+		document.onclick=reEnable
+		}
+	</script>
+	<script language="Javascript">
+		document.oncontextmenu = function(){return false}
+	</script>
+	<script language="JavaScript1.2"> 
+		window.moveTo(0,0); 
+		if (document.all) { 
+		top.window.resizeTo(screen.availWidth,screen.availHeight); 
+		} 
+		else if (document.layers||document.getElementById) { 
+		if (top.window.outerHeight<screen.availHeight||top.window.outerWidth<screen.availWidth){
+		 top.window.outerHeight = screen.availHeight; 
+		top.window.outerWidth = screen.availWidth; 
+		} 
+		} 
+		</script> 
+<!-- navidad -->
+<div id="snow-container"></div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+	const numFlakes = 50; <!-- Aquí definimos la cantidad de copos de nieve -->
+
+	// Obtén el contenedor de nieve
+	const snowContainer = document.getElementById("snow-container");
+
+	for (let i = 0; i < numFlakes; i++) {
+		createSnowflake();
+	}
+
+	function createSnowflake() {
+		const snowflake = document.createElement("div");
+		snowflake.className = "snowflake";
+		snowflake.style.left = Math.random() * 100 + "vw";
+		snowflake.style.animationDuration = Math.random() * 2 + 3 + "s";
+		snowContainer.appendChild(snowflake);
+
+		snowflake.addEventListener("animationiteration", function() {
+			this.style.left = Math.random() * 100 + "vw";
+		});
+	}
+});
+</script>
+
+
+
+</body>
+</html>
