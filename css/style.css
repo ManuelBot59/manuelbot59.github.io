@@ -1156,7 +1156,7 @@ ul > li {
 	margin-right: auto;
 }
 
-/*======Why Us section==========*/
+/*======por que formarte con nosotros==========*/
 
 .whyUs-section {
 	background: #1c3961;
@@ -1208,7 +1208,7 @@ ul > li {
 	position: relative;
 	margin-bottom: 1.33334em;
 }
-
+/*==color verde de por que formarte con nosotros======*/
 .whyus-wrap h1::after {
 	position: absolute;
 	content: "";
@@ -1217,7 +1217,7 @@ ul > li {
 	left: 0;
 	height: 3px;
 	/*background: #fff;*/
-	border: 1px solid #fff;
+	border: 2.5px solid #12a84e;
 }
 
 .whyus-wrap p {
@@ -1276,7 +1276,7 @@ ul > li {
     transition: all 0.5s ease;
 }
 
-/*======Event UPcomming========*/
+/*======entrevistas y colaboraciones========*/
 
 .events-section .container {
 	display: flex;
@@ -1284,6 +1284,13 @@ ul > li {
 	justify-content: space-between;
 	padding-bottom: 6.25em;
 }
+.events-section2 .container {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	padding-bottom: 6.25em;
+}
+
 
 .event-wrap {
 	width: 48.7179%;
@@ -1321,10 +1328,10 @@ ul > li {
 	margin-top: 1.4285em;
 	margin-bottom: 1.4285em;
 }
-/*========What other say section ============*/
+/*========reseña de nuestros alumnos ============*/
 
 .what-other-say {
-	background: #323e54;
+	background: #1c3961;
 }
 
 .what-other-say .container {
@@ -3153,7 +3160,7 @@ RESPONSIVE STYLESHEET
 		width: 100%;
 	}
 
-	/*===Upcomming Events====*/
+<	/*===Upcomming Events====*/
 	.events-section .event-wrap {
 		margin-left: 10px;
 	}
@@ -3474,13 +3481,13 @@ RESPONSIVE STYLESHEET
 	line-height: 1.9em;
 	position: relative;
 }
-
+/*==color verde de reseña de nuestros alumnos======*/
 .what-other-say .container .head::after {
 	position: absolute;
 	content: '';
 	border: 2.5px solid #12a84e;
-	width: 90px;
-	left: 46%;
+	width: 608px;
+	left: 21%;
 	bottom: 0;
 }
 
@@ -3555,4 +3562,50 @@ RESPONSIVE STYLESHEET
 /* Estilo para el enlace al pasar el cursor */
 .featured-points a:hover {
   color: #12a84e; /* al pasar el cursor */
+}
+
+/* Estilo para los métodos de pago */
+
+.payment-methods-section {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.payment-methods-section h1 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #fff;
+    text-align: center; /* Centra el texto horizontalmente */
+}
+
+.payment-methods {
+    display: flex;
+    justify-content: center; /* Centra los elementos horizontalmente */
+    align-items: center; /* Alinea verticalmente si los elementos tienen diferentes alturas */
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.payment-methods .method {
+    width: 70px; /* Tamaño del contenedor de cada imagen */
+    height: 70px;
+    display: flex;
+    align-items: center; /* Centra verticalmente la imagen */
+    justify-content: center; /* Centra horizontalmente la imagen */
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.payment-methods .method img {
+    max-width: 100%; /* Asegura que la imagen no se salga del contenedor */
+    max-height: 100%;
+    object-fit: contain; /* Asegura que la imagen mantenga sus proporciones */
+}
+
+.payment-methods .method:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
