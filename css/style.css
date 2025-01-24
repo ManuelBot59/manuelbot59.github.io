@@ -622,18 +622,20 @@ a:hover, a:active {
 	margin-left: auto;
 }
 
-/*======Page Header=============*/
+/*
+======Page Header=============
 
 .top-header {
-	/*background: #1c3961;*/
+	/*background: #1c3961;
 }
 
 .top-header a {
-	/*text-decoration: none;*/
+	/*text-decoration: none;
 	/*color: #fff;*/
-	/*font-family: 'Raleway', sans-serif;*/
+	/*font-family: 'Raleway', sans-serif;
 }
 
+*/
 .top-header .container {
 	display: flex;
 	flex: 1;
