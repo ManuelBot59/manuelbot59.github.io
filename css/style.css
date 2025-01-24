@@ -3609,3 +3609,33 @@ RESPONSIVE STYLESHEET
     transform: scale(1.1);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+
+/*====== whatsapp flotante========*/
+
+#float-whatsapp {
+  position: fixed;
+  bottom: 40px; /* Ajusta la posición desde el fondo */
+  right: 40px;  /* Ajusta la posición desde la derecha */
+  z-index: 9999; /* Asegura que esté encima de otros elementos */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para darle profundidad */
+  border-radius: 50%; /* Hacer que sea completamente redondo */
+  /* background-color: #25d366; /* Fondo verde de WhatsApp */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+/* Animación al pasar el cursor */
+#float-whatsapp:hover {
+  transform: scale(1.1); /* Aumenta ligeramente el tamaño */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Sombra más intensa */
+}
+
+/* Imagen del ícono de WhatsApp */
+.whatsapp-icon {
+  width: 90px; /* Tamaño del ícono */
+  height: 90px;
+  border-radius: 50%; /* Hace que el ícono sea circular */
+}
