@@ -4233,7 +4233,7 @@ readers do not read off random characters that represent icons */
 .dropdown-toggle {
   background-color: #FFFFFF;
   border: 1px solid #cccccc;
-  padding: 5px 20px;
+  padding: 5px 23px;
   font-size: 14px;
   cursor: pointer;
   display: flex;
