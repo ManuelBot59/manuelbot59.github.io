@@ -1,6 +1,11 @@
 // js/modal.js
 $(document).ready(function(){
 
+    // Mostrar el modal después de X tiempo
+    setTimeout(function(){
+        $('#myModal').fadeIn(500);
+    }, 3000); // <-- Este valor controla el tiempo en milisegundos (3000 = 3 segundos)
+
     // Detectar dispositivos móviles
     const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
     
@@ -16,13 +21,13 @@ $(document).ready(function(){
     $('#myModal').fadeIn(500);
     
     // Cerrar con la X
-    $('.close').on('click', function(){
+    $('.close').click(function(){
         $('#myModal').fadeOut(500);
     });
     
     // Cerrar al hacer click fuera
     $(document).on('click', function(e){
-        if($(e.target).is('#myModal')) {
+        if(e.target.id == 'myModal') {
             $('#myModal').fadeOut(500);
         }
     });
