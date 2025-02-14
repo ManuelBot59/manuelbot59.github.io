@@ -41,6 +41,7 @@
 	<link rel="stylesheet" href="assets/css/main.css" />
 	<link rel="stylesheet" type="text/css" href="css/all.index.css">
 	<link rel="stylesheet" type="text/css" href="css/modal.css">
+	<link rel="stylesheet" href="css/responsive.css">
 	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
 </head>
 <body>
@@ -77,8 +78,8 @@
 			<div class="inner">
 				<h2>¡Bienvenido!</h2>
 					<div align="center">
-					  <img src="images/ManuelBot59.png" width="200" height="200"/><br>
-					  <img src="images/FirmaManuelBot59.png" width="450" height="120"/><br>
+					  <img src="images/ManuelBot59.png" class="profile-img">
+					  <img src="images/FirmaManuelBot59.png" class="signature-img">	
 					</div><br>		
 				<h2> NIVEL PROFESIONAL Y ACADÉMICO: </h2>
 					🧑‍🏫 Profesor en cursos de OSINT/SOCMINT de nivel avanzado y experto - Udemy, LISA Institute y en la Policía de Perú.<br>
@@ -144,8 +145,8 @@
 		&copy; Manuel Travezaño © 2025 - Todos los Derechos reservados</p>
 		</footer>
 			<br> 
-			<div align="center">	
-				<img src="https://www.flagcounter.me/eHs/" alt="Flag Counter">																		      
+			<div class="flag-counter-container">
+			<img id="dynamicFlagCounter" src="https://www.flagcounter.me/eHs/" alt="Flag Counter">
 			</div>
 
 </div>
@@ -173,18 +174,6 @@
 	<script language="Javascript">
 		document.oncontextmenu = function(){return false}
 	</script>
-	<script language="JavaScript1.2"> 
-		window.moveTo(0,0); 
-		if (document.all) { 
-		top.window.resizeTo(screen.availWidth,screen.availHeight); 
-		} 
-		else if (document.layers||document.getElementById) { 
-		if (top.window.outerHeight<screen.availHeight||top.window.outerWidth<screen.availWidth){
-		 top.window.outerHeight = screen.availHeight; 
-		top.window.outerWidth = screen.availWidth; 
-		} 
-		} 
-	</script> 
 	<script type="application/ld+json">
 		{
 		  "@context": "https://schema.org",

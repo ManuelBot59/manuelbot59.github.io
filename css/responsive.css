@@ -1,0 +1,133 @@
+/* responsive.css */
+/* ========== DISPOSITIVOS MÓVILES (max-width: 768px) ========== */
+@media screen and (max-width: 768px) {
+  /* Ajustes generales */
+  body {
+    font-size: 14px;
+    overflow-x: hidden;
+  }
+
+  /* Wrapper principal */
+  #wrapper {
+    padding: 10px;
+  }
+
+  /* Encabezado */
+  #header .content {
+    padding: 15px;
+  }
+  
+  #header .inner h2 {
+    font-size: 1.5em;
+    margin: 10px 0;
+  }
+
+  /* Imágenes principales */
+  #header img[src*="ManuelBot59.png"] {
+    width: 150px !important;
+    height: 150px !important;
+  }
+  
+  #header img[src*="FirmaManuelBot59.png"] {
+    width: 100% !important;
+    height: auto !important;
+    max-width: 300px;
+  }
+
+  /* Menú de navegación */
+  nav ul {
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  nav ul li a {
+    padding: 8px;
+    font-size: 0.9em;
+  }
+
+  /* Selector de idioma */
+  .language-selector {
+    right: 10px;
+    top: 10px;
+  }
+  
+  .dropdown-menu {
+    width: 180px;
+  }
+
+  /* Modal */
+  .modal-content {
+    width: 95%;
+    margin: 10% auto;
+  }
+  
+  .close {
+    right: -10px;
+    top: -35px;
+    font-size: 28px;
+  }
+
+  /* Footer */
+  footer#footer {
+    padding: 15px;
+    font-size: 0.8em;
+  }
+
+  /* Sección "Acerca de mí" */
+  .major, .maior {
+    font-size: 1.3em;
+  }
+}
+
+/* ========== TABLETS (max-width: 1024px) ========== */
+@media screen and (max-width: 1024px) {
+  /* Ajustes intermedios */
+  #header .content {
+    padding: 20px;
+  }
+  
+  nav ul {
+    gap: 15px;
+  }
+}
+
+
+/* responsive.css - Añade esto flag-counter-container */
+.flag-counter-container {
+    max-width: 100%;
+    overflow-x: auto;
+    padding: 10px 0;
+    margin: 20px auto;
+    text-align: center;
+}
+
+#dynamicFlagCounter {
+    height: auto;
+    max-width: 100%;
+    /* Ajustes específicos para diferentes dispositivos */
+    width: 1000px; /* Tamaño base para escritorio */
+}
+
+@media screen and (max-width: 1200px) {
+    #dynamicFlagCounter {
+        width: 800px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    #dynamicFlagCounter {
+        width: 600px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #dynamicFlagCounter {
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #dynamicFlagCounter {
+        width: 300px;
+    }
+}
