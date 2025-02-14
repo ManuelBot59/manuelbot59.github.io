@@ -1,11 +1,5 @@
 // js/modal.js
 $(document).ready(function(){
-
-    // Mostrar el modal después de X tiempo
-    setTimeout(function(){
-        $('#myModal').fadeIn(500);
-    }, 3000); // <-- Este valor controla el tiempo en milisegundos (3000 = 3 segundos)
-
     // Detectar dispositivos móviles
     const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
     
@@ -17,8 +11,10 @@ $(document).ready(function(){
         });
     }
 
-    // Mostrar el modal con efecto
-    $('#myModal').fadeIn(500);
+    // Mostrar el modal después de 3 segundos (3000 ms)
+    setTimeout(function(){
+        $('#myModal').fadeIn(500);
+    }, 3000); // Única aparición
     
     // Cerrar con la X
     $('.close').click(function(){
@@ -32,7 +28,6 @@ $(document).ready(function(){
         }
     });
 });
-
 
 function adjustFlagCounter() {
     const flagCounter = document.getElementById('dynamicFlagCounter');
