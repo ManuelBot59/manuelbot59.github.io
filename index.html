@@ -7,16 +7,13 @@
 	<meta name="countryCode" content="pe"/>
 	<meta name="searchTitle" content="¿Qué es la inteligencia de código abierto (OSINT)?, ¿Qué es la Inteligencia en Redes Sociales (SOCMINT)?"/>
 	<meta name="description" content="La inteligencia de código abierto (OSINT) es el proceso de recopilación y análisis de información disponible públicamente en internet. La Inteligencia en Redes Sociales (SOCMINT), es la recopilación y análisis de información pública en redes sociales para obtener insights y tomar decisiones informadas."/>
-
 	<meta name="twitter:card" content="summary_large_image">
 	<meta name="twitter:title" content="Perfil de Manuel Travezaño dedicado a la investigación a través de la Inteligencia en Fuentes Abiertas (OSINT) e Inteligencia en Redes Sociales (SOCMINT)">
 	<meta name="twitter:description" content="Blog dedicado a todo lo relacionado con la Inteligencia de Fuentes Abiertas (OSINT), Inteligencia en Redes Sociales (SOCMINT) y ciberinteligencia. Herramientas, procedimientos y más.">
 	<meta name="twitter:image" content="/">
-
 	<meta property="og:title" content="Información y Blog sobre OSINT | SOCMINT y Ciberinteligencia">
 	<meta property="og:description" content="Blog dedicado a la Inteligencia de Fuentes Abiertas (OSINT), Inteligencia en Redes Sociales (SOCMINT) y ciberinteligencia.">
 	<meta property="og:image" content="/">
-
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<meta name="keywords" content="osint, geoint, imint, pensamiento crítico, humint, socmint, Threat intelligence, investigar en internet, investigación, inteligencia, ciberinteligencia, analista, investigar correos, manuel travezaño, manuelbot, manuelbot59, telefono osint, research, cyberint, osint perú, manuel osint, trave osint, ciber" />
 	<meta name="author" content="manuel travezaño, manuelbot59, travezaño" />
@@ -24,27 +21,20 @@
 	<link rel="shortcut icon" href="css/favicon.ico" type="image/x-icon" />	
 	<link rel="stylesheet" href="assets/css/main.css" />
 	<link rel="stylesheet" type="text/css" href="css/all.index.css">
+	<link rel="stylesheet" type="text/css" href="css/modal.css">
 	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
-	<script src="js/jquery.snow.js"></script>
-		<script>
-		$(document).ready( function(){
-		$.fn.snow({
-		});
-		});
-		</script>
-	
 </head>
 <body>
- <!---	<div id="myModal" class="modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <div class="image-container">
-                <a href="https://manuelbot59.com/">
-                    <img src="./images/aviso-nuevo-portal-es.jpg" alt="Imagen 2" style="width:70%; height:auto;">
-                </a>
+<div id="myModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="image-container">
+            <a href="https://manuelbot59.com/">
+                <img src="./images/aviso-nuevo-portal-es.png" alt="Nuevo portal">
+            </a>
         </div>
     </div>
-	</div> -->	
+</div>
 
 <!-- Wrapper -->
 <div id="wrapper">
@@ -148,7 +138,7 @@
 	<script src="assets/js/skel.min.js"></script>
 	<script src="assets/js/util.js"></script>
 	<script src="assets/js/main.js"></script>
-	 <script language= "Javascript">
+	<script language= "Javascript">
 		function disableselect(e){
 		return false
 		}
@@ -177,45 +167,46 @@
 		} 
 	</script> 
 	<script type="application/ld+json">
-				{
-				  "@context":"http://schema.org/",
-				  "@type":"AggregateRating",
-				"itemReviewed":{
-				"@type":"ManuelBot59",
-				"name":"Manuel Travezaño"
-				},
-				"ratingValue":"4.9",
-				"bestRating":"5",
-				"ratingCount": "15541",    
-				"reviewCount":"20050",
-				"author":{
-				"@type":"ManuelBot",
-				"@id":"https://manuelbot59.github.io/"
-				}}
+		{
+		  "@context": "https://schema.org",
+		  "@type": "Person",
+		  "name": "Manuel Travezaño",
+		  "url": "https://manuelbot59.com",
+		  "jobTitle": "Analista Táctico de Ciberinteligencia",
+		  "worksFor": {
+			"@type": "Organization",
+			"name": "Policía Nacional del Perú",
+			"department": "División de Inteligencia"
+		  },
+		  "description": "Especialista en OSINT y SOCMINT, profesor de cursos avanzados y expertos de inteligencia en fuentes abiertas y redes sociales",
+		  "image": "https://manuelbot59.com/images/ManuelBot59.png",
+		  "aggregateRating": {
+			"@type": "AggregateRating",
+			"ratingValue": "4.9",
+			"bestRating": "5",
+			"reviewCount": "20050",
+			"ratingCount": "15541"
+		  },
+		  "sameAs": [
+			"https://t.me/OsintManuelBot59",
+			"https://www.patreon.com/ManuelBot59",
+			"https://linktr.ee/proyectosmanuelbot"
+		  ]
+		}
 	</script>
-	<script>
-        // Obtener el modal
-        var modal = document.getElementById("myModal");
-
-        // Obtener el elemento <span> que cierra el modal
-        var span = document.getElementsByClassName("close")[0];
-
-        // Mostrar el modal después de un cierto tiempo (por ejemplo, 3 segundos)
-        setTimeout(function() {
-            modal.style.display = "block";
-        }, 3000);
-
-        // Cuando el usuario hace clic en <span> (x), cierra el modal
-        span.onclick = function() {
-            modal.style.display = "none";
-        }
-
-        // Cuando el usuario hace clic fuera del modal, cierra el modal
-        window.onclick = function(event) {
-            if (event.target == modal) {
-                modal.style.display = "none";
-            }
-        }
-    </script>
+	<script type="application/ld+json">
+		{
+		  "@context": "https://schema.org",
+		  "@type": "WebSite",
+		  "name": "ManuelBot59 - OSINT/SOCMINT",
+		  "url": "https://manuelbot59.com",
+		  "potentialAction": {
+			"@type": "SearchAction",
+			"target": "https://manuelbot59.com/?s={search_term_string}",
+			"query-input": "required name=search_term_string"
+		  }
+		}
+	</script>
+<script src="js/modal.js"></script>	
 </body>
 </html>
