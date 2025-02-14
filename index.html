@@ -35,7 +35,16 @@
 	
 </head>
 <body>
-	
+	<div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="image-container">
+                <a href="https://manuelbot59.com/">
+                    <img src="./images/aviso-nuevo-portal-es.jpg" alt="Imagen 2" style="width:70%; height:auto;">
+                </a>
+        </div>
+    </div>
+	</div>	
 
 <!-- Wrapper -->
 <div id="wrapper">
@@ -76,8 +85,6 @@
 				<li><a href="./ManuelBot59-PE_es.html">Recursos OSINT/SOCMINT</a></li>
 				<li><a href="https://linktr.ee/proyectosmanuelbot" target="_blank">Descuentos en mis cursos</a></li>
 				<li><a href="https://www.patreon.com/ManuelBot59" target="_blank">Comunidad en Patreon</a></li>
-				<!-- <li><a href="./docs/TEMARIO-OSINT-SOCMINT.pdf" target="_blank">temario cursos</a></li> -->
-				<!-- <li><a href="./Formacion.html" target="_blank">cursos de FORMACIÓN</a></li>	 -->
 				<li><a href="https://t.me/OsintManuelBot59" target="_blank">Canal en TELEGRAM</a></li>
 				<li><a href="#TCS">ACERCA DE MI</a></li>
 			</ul>
@@ -186,5 +193,29 @@
 				"@id":"https://manuelbot59.github.io/"
 				}}
 	</script>
+	<script>
+        // Obtener el modal
+        var modal = document.getElementById("myModal");
+
+        // Obtener el elemento <span> que cierra el modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // Mostrar el modal después de un cierto tiempo (por ejemplo, 3 segundos)
+        setTimeout(function() {
+            modal.style.display = "block";
+        }, 3000);
+
+        // Cuando el usuario hace clic en <span> (x), cierra el modal
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        // Cuando el usuario hace clic fuera del modal, cierra el modal
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
 </body>
 </html>
