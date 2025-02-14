@@ -45,11 +45,27 @@
       }
   </style>
   </head>
+  
   <body>
   <img src="./images/leaks-osint-bot.jpg" width="716" height="614"/><br>      
   <div class="loader"></div>
   <div class="message">
-      Estás siendo redirigido a <a href="https://t.me/AllInOneBOTLeaks_bot?start=DZmqdpg">OSINT BOT Leaks</a> en 5 segundos...
-  </div>
+    Estás siendo redirigido a <a href="https://t.me/AllInOneBOTLeaks_bot?start=DZmqdpg">OSINT BOT Leaks</a> en <span id="countdown">5</span> segundos...
+</div>
+        <script>
+            // Contador regresivo
+            let seconds = 5;
+            const countdownElement = document.getElementById('countdown');
+            
+            const timer = setInterval(() => {
+                seconds--;
+                countdownElement.textContent = seconds;
+                
+                if(seconds <= 0) {
+                    clearInterval(timer);
+                    window.location.href = 'https://manuelbot59.com';
+                }
+            }, 1000);
+        </script>
   </body>
 </html>
