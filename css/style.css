@@ -3641,19 +3641,3 @@ RESPONSIVE STYLESHEET
   height: 90px;
   border-radius: 50%; /* Hace que el ícono sea circular */
 }
-
-/* main.css */
-.profile-img {
-    width: 200px;
-    height: 200px;
-    max-width: 100%;
-    border-radius: 50%;
-}
-
-.signature-img {
-    width: 450px;
-    max-width: 100%;
-    height: auto;
-    margin: 0 auto;
-    display: block;
-}
